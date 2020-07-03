@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZSCarouselView_Example' do
+  pod 'ZSCarouselView', :path => '../'
+
+  target 'ZSCarouselView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
