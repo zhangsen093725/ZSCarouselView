@@ -1,0 +1,6 @@
+framework module ZSCarouselView {
+  umbrella header "ZSCarouselView-umbrella.h"
+
+  export *
+  module * { export * }
+}

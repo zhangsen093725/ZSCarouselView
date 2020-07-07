@@ -1,0 +1,24 @@
+{
+  "name": "ZSCarouselView",
+  "version": "0.1.0",
+  "summary": "A short description of ZSCarouselView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhangsen093725/ZSCarouselView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhangsen093725": "joshzhang@yntengyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhangsen093725/ZSCarouselView.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZSCarouselView/Classes/**/*",
+  "swift_version": "5.0"
+}

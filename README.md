@@ -1,15 +1,30 @@
 # ZSCarouselView
 
-[![CI Status](https://img.shields.io/travis/zhangsen093725/ZSCarouselView.svg?style=flat)](https://travis-ci.org/zhangsen093725/ZSCarouselView)
 [![Version](https://img.shields.io/cocoapods/v/ZSCarouselView.svg?style=flat)](https://cocoapods.org/pods/ZSCarouselView)
 [![License](https://img.shields.io/cocoapods/l/ZSCarouselView.svg?style=flat)](https://cocoapods.org/pods/ZSCarouselView)
 [![Platform](https://img.shields.io/cocoapods/p/ZSCarouselView.svg?style=flat)](https://cocoapods.org/pods/ZSCarouselView)
 
-## Example
+## Author
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Josh, 376019018@qq.com
 
-## Requirements
+## Desc
+
+1. 跑马灯，cube 动画，可自定义 cube view
+2. 循环轮播，复用 Cell
+3. 可自定义Cell，水平、垂直滚动
+4. 可自定义FlowLayout
+
+## 版本日志
+
+### 0.1.0
+
+1. ```ZSCubeCarouseView``` cube跑马灯
+
+2. ```ZSScrollCarouseCell```  ScrollCarouse 的基础Cell，继承可自定义Cell
+2. ```ZSScrollCarouseView``` ScrollCarouse 的基础View
+3. ```ZSScrollCarouseFullView``` 填充View的轮播视图
+3. ```ZSScrollCarouseCustomView``` 自定义View的轮播视图
 
 ## Installation
 
@@ -19,10 +34,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ZSCarouselView'
 ```
-
-## Author
-
-zhangsen093725, joshzhang@yntengyun.com
 
 ## License
 

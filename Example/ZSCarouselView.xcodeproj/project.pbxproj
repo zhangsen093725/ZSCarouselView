@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B832CB71E0AAEF47BD9077A /* Pods_ZSCarouselView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842D1A358A516BA2D9BCB345 /* Pods_ZSCarouselView_Tests.framework */; };
+		4EAB489524AED29F004E75BA /* ZSScrollCarouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB489424AED29F004E75BA /* ZSScrollCarouseViewController.swift */; };
+		4EAB489724AED2A3004E75BA /* ZSCubeCarouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB489624AED2A3004E75BA /* ZSCubeCarouseViewController.swift */; };
+		4EB7C1C524B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,8 +32,11 @@
 
 /* Begin PBXFileReference section */
 		17BDE0F519836D268BD968E1 /* Pods-ZSCarouselView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSCarouselView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZSCarouselView_Tests/Pods-ZSCarouselView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		285FC3A72D72081F6347B4BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		285FC3A72D72081F6347B4BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31FAFFEEBD2388DB0F4B035D /* Pods_ZSCarouselView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZSCarouselView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EAB489424AED29F004E75BA /* ZSScrollCarouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSScrollCarouseViewController.swift; sourceTree = "<group>"; };
+		4EAB489624AED2A3004E75BA /* ZSCubeCarouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSCubeCarouseViewController.swift; sourceTree = "<group>"; };
+		4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSScrollCarouseCustomCell.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZSCarouselView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSCarouselView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,8 +51,8 @@
 		842D1A358A516BA2D9BCB345 /* Pods_ZSCarouselView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZSCarouselView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8611093E25E750A9E4F17421 /* Pods-ZSCarouselView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSCarouselView_Example.release.xcconfig"; path = "Target Support Files/Pods-ZSCarouselView_Example/Pods-ZSCarouselView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAD76227A475B29AE22C106E /* Pods-ZSCarouselView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSCarouselView_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZSCarouselView_Example/Pods-ZSCarouselView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D24A5B07F758A11734A541A6 /* ZSCarouselView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZSCarouselView.podspec; path = ../ZSCarouselView.podspec; sourceTree = "<group>"; };
-		DB41F3D7712A883004F638F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D24A5B07F758A11734A541A6 /* ZSCarouselView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZSCarouselView.podspec; path = ../ZSCarouselView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DB41F3D7712A883004F638F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift */,
+				4EAB489424AED29F004E75BA /* ZSScrollCarouseViewController.swift */,
+				4EAB489624AED2A3004E75BA /* ZSCubeCarouseViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,7 +165,6 @@
 				17BDE0F519836D268BD968E1 /* Pods-ZSCarouselView_Tests.debug.xcconfig */,
 				81739E93B79102277ABBA13C /* Pods-ZSCarouselView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +179,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				140443FECA72114F7D1AB8E9 /* [CP] Embed Pods Frameworks */,
+				45346BFB8E17CAD18D704F08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +235,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,18 +271,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		140443FECA72114F7D1AB8E9 /* [CP] Embed Pods Frameworks */ = {
+		45346BFB8E17CAD18D704F08 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZSCarouselView_Example/Pods-ZSCarouselView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ZSCarouselView/ZSCarouselView.framework",
+				"${BUILT_PRODUCTS_DIR}/ZSViewUtil/ZSViewUtil.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZSCarouselView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZSViewUtil.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -331,8 +344,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB7C1C524B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				4EAB489524AED29F004E75BA /* ZSScrollCarouseViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				4EAB489724AED2A3004E75BA /* ZSCubeCarouseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -499,7 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
