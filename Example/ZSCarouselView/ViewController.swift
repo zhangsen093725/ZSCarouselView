@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     lazy var button2: UIButton = {
         
         let button = UIButton(type: .system)
-        button.setTitle("TableView嵌套Plain", for: .normal)
+        button.setTitle("Scroll", for: .normal)
         button.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
         view.addSubview(button)
         return button
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     lazy var button: UIButton = {
         
         let button = UIButton(type: .system)
-        button.setTitle("TableView", for: .normal)
+        button.setTitle("Cube", for: .normal)
         button.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
         view.addSubview(button)
         return button
