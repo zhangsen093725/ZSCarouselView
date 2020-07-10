@@ -1,5 +1,5 @@
 //
-//  ZSLoopCubeView.swift
+//  ZSCubeCarouselView.swift
 //  Pods-ZSViewUtil_Example
 //
 //  Created by 张森 on 2020/5/13.
@@ -7,30 +7,30 @@
 
 import UIKit
 
-@objc public protocol ZSLoopCubeViewDataSource {
+@objc public protocol ZSCubeCarouselViewDataSource {
     
     /// CubeView Content的总数
-    /// - Parameter loopCubeView: loopCubeView
-    func zs_numberOfItemLoopCubeView(_ loopCubeView: ZSLoopCubeView) -> Int
+    /// - Parameter cubeCarouseView: cubeCarouseView
+    func zs_numberOfItemCubeCarouseView(_ cubeCarouseView: ZSCubeCarouselView) -> Int
     
     /// CubeView ContentView
     /// - Parameters:
-    ///   - loopCubeView: loopCubeView
-    func zs_loopCubeContentView(_ loopCubeView: ZSLoopCubeView) -> UIView
+    ///   - cubeCarouseView: cubeCarouseView
+    func zs_cubeCarouseViewContentView(_ cubeCarouseView: ZSCubeCarouselView) -> UIView
 }
 
-@objc public protocol ZSLoopCubeViewDelegate {
+@objc public protocol ZSCubeCarouselViewDelegate {
     
     ///CubeView ContentView的点击
     /// - Parameters:
     ///   - loopScrollView: loopScrollView
     ///   - index: 当前view展示的index
-    func zs_loopCubeView(_ loopCubeView: ZSLoopCubeView, didSelectedItemFor index: Int)
+    func zs_cubeCarouseViewView(_ cubeCarouseView: ZSCubeCarouselView, didSelectedItemFor index: Int)
     
     /// CubeView动画完成
     /// - Parameters:
-    ///   - loopCubeView: loopCubeView
-    func zs_loopCubeFinishView(_ loopCubeView: ZSLoopCubeView, index: Int)
+    ///   - cubeCarouseView: cubeCarouseView
+    func zs_cubeCarouseViewFinishView(_ cubeCarouseView: ZSCubeCarouselView, index: Int)
 }
 
 
@@ -39,17 +39,17 @@ import UIKit
 }
 
 
-@objcMembers open class ZSLoopCubeView: UIView {
+@objcMembers open class ZSCubeCarouselView: UIView {
     
     var timer: Timer?
     var cubeCount: Int = 0
     var index: Int = 0
     
     /// 滚动视图的数据配置
-    public weak var dataSource: ZSLoopCubeViewDataSource?
+    public weak var dataSource: ZSCubeCarouselViewDataSource?
     
     /// 滚动视图的交互
-    public weak var delegate: ZSLoopCubeViewDelegate?
+    public weak var delegate: ZSCubeCarouselViewDelegate?
     
     /// 是否开启自动滚动，默认为 true
     public var isAutoScroll: Bool = true
@@ -81,7 +81,7 @@ import UIKit
         
         contentView.frame = bounds
         
-        cubeCount = dataSource?.zs_numberOfItemLoopCubeView(self) ?? 0
+        cubeCount = dataSource?.zs_numberOfItemCubeCarouseView(self) ?? 0
         
         isLoopCube = isLoopCube ? cubeCount > 1 : isLoopCube
         
@@ -91,12 +91,12 @@ import UIKit
     }
     
     @objc func didSelectedCube() {
-        delegate?.zs_loopCubeView(self, didSelectedItemFor: index)
+        delegate?.zs_cubeCarouseViewView(self, didSelectedItemFor: index)
     }
     
     var cubeContentView: UIView? {
         
-        guard let view = dataSource?.zs_loopCubeContentView(self) else { return nil }
+        guard let view = dataSource?.zs_cubeCarouseViewContentView(self) else { return nil }
         view.isUserInteractionEnabled = false
         contentView.addSubview(view)
         return view
@@ -116,7 +116,7 @@ import UIKit
             return
         }
         view.layer.add(cubeAnimation, forKey: "animation")
-        delegate?.zs_loopCubeFinishView(self, index: index)
+        delegate?.zs_cubeCarouseViewFinishView(self, index: index)
     }
     
     open var cubeAnimation: CATransition {

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1B832CB71E0AAEF47BD9077A /* Pods_ZSCarouselView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842D1A358A516BA2D9BCB345 /* Pods_ZSCarouselView_Tests.framework */; };
-		4EAB489524AED29F004E75BA /* ZSScrollCarouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB489424AED29F004E75BA /* ZSScrollCarouseViewController.swift */; };
-		4EAB489724AED2A3004E75BA /* ZSCubeCarouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB489624AED2A3004E75BA /* ZSCubeCarouseViewController.swift */; };
-		4EB7C1C524B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift */; };
+		4EAB489524AED29F004E75BA /* ZSScrollCarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB489424AED29F004E75BA /* ZSScrollCarouselViewController.swift */; };
+		4EAB489724AED2A3004E75BA /* ZSCubeCarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB489624AED2A3004E75BA /* ZSCubeCarouselViewController.swift */; };
+		4EB7C1C524B41B1A00E1C175 /* ZSScrollCarouselCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouselCustomCell.swift */; };
+		4EE121B024B869AB00A682A5 /* ZSSphereCarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE121AF24B869AB00A682A5 /* ZSSphereCarouselViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -34,9 +35,10 @@
 		17BDE0F519836D268BD968E1 /* Pods-ZSCarouselView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSCarouselView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZSCarouselView_Tests/Pods-ZSCarouselView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		285FC3A72D72081F6347B4BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31FAFFEEBD2388DB0F4B035D /* Pods_ZSCarouselView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZSCarouselView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EAB489424AED29F004E75BA /* ZSScrollCarouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSScrollCarouseViewController.swift; sourceTree = "<group>"; };
-		4EAB489624AED2A3004E75BA /* ZSCubeCarouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSCubeCarouseViewController.swift; sourceTree = "<group>"; };
-		4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSScrollCarouseCustomCell.swift; sourceTree = "<group>"; };
+		4EAB489424AED29F004E75BA /* ZSScrollCarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSScrollCarouselViewController.swift; sourceTree = "<group>"; };
+		4EAB489624AED2A3004E75BA /* ZSCubeCarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSCubeCarouselViewController.swift; sourceTree = "<group>"; };
+		4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouselCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSScrollCarouselCustomCell.swift; sourceTree = "<group>"; };
+		4EE121AF24B869AB00A682A5 /* ZSSphereCarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSSphereCarouselViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZSCarouselView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSCarouselView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,9 +103,10 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift */,
-				4EAB489424AED29F004E75BA /* ZSScrollCarouseViewController.swift */,
-				4EAB489624AED2A3004E75BA /* ZSCubeCarouseViewController.swift */,
+				4EB7C1C424B41B1A00E1C175 /* ZSScrollCarouselCustomCell.swift */,
+				4EAB489424AED29F004E75BA /* ZSScrollCarouselViewController.swift */,
+				4EAB489624AED2A3004E75BA /* ZSCubeCarouselViewController.swift */,
+				4EE121AF24B869AB00A682A5 /* ZSSphereCarouselViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -344,11 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB7C1C524B41B1A00E1C175 /* ZSScrollCarouseCustomCell.swift in Sources */,
+				4EB7C1C524B41B1A00E1C175 /* ZSScrollCarouselCustomCell.swift in Sources */,
+				4EE121B024B869AB00A682A5 /* ZSSphereCarouselViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				4EAB489524AED29F004E75BA /* ZSScrollCarouseViewController.swift in Sources */,
+				4EAB489524AED29F004E75BA /* ZSScrollCarouselViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				4EAB489724AED2A3004E75BA /* ZSCubeCarouseViewController.swift in Sources */,
+				4EAB489724AED2A3004E75BA /* ZSCubeCarouselViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

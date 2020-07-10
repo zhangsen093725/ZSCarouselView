@@ -28,8 +28,20 @@ class ViewController: UIViewController {
         return button
     }()
     
+    lazy var button3: UIButton = {
+        
+        let button = UIButton(type: .system)
+        button.setTitle("Sphere", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
+        view.addSubview(button)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .white
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -47,17 +59,22 @@ class ViewController: UIViewController {
         
         button.frame = CGRect(x: buttonX, y: 60, width: buttonW, height: buttonH)
         button2.frame = CGRect(x: buttonX, y: button.frame.maxY + 20, width: buttonW, height: buttonH)
+        button3.frame = CGRect(x: buttonX, y: button2.frame.maxY + 20, width: buttonW, height: buttonH)
     }
     
     @objc func buttonAction(_ sender: UIButton) {
         
         if sender == button2
         {
-            navigationController?.pushViewController(ZSScrollCarouseViewController(), animated: true)
+            navigationController?.pushViewController(ZSScrollCarouselViewController(), animated: true)
+        }
+        else if sender == button
+        {
+            navigationController?.pushViewController(ZSCubeCarouselViewController(), animated: true)
         }
         else
         {
-            navigationController?.pushViewController(ZSCubeCarouseViewController(), animated: true)
+            navigationController?.pushViewController(ZSSphereCarouselViewController(), animated: true)
         }
     }
 }

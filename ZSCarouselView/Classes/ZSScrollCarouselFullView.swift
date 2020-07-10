@@ -1,5 +1,5 @@
 //
-//  ZSScrollCarouseFullView.swift
+//  ZSScrollCarouselFullView.swift
 //  Pods-ZSCarouselView_Example
 //
 //  Created by Josh on 2020/7/3.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-@objcMembers open class ZSScrollCarouseFullView: ZSScrollCarouseView {
+@objcMembers open class ZSScrollCarouselFullView: ZSScrollCarouselView {
     
     /// item 之间的间隙
     public var minimumSpacing: CGFloat = 0 
@@ -21,7 +21,7 @@ import UIKit
     }
     
     public convenience init(scrollDirection: UICollectionView.ScrollDirection,
-                            cellClass: ZSScrollCarouseCell.Type = ZSScrollCarouseCell.self) {
+                            cellClass: ZSScrollCarouselCell.Type = ZSScrollCarouselCell.self) {
         
         self.init(frame: .zero)
         collectionViewLayout.scrollDirection = scrollDirection
@@ -31,18 +31,25 @@ import UIKit
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        _collectionView_.frame = CGRect(x: 0, y: 0, width: bounds.width + minimumSpacing, height: frame.height)
+        if collectionViewLayout.scrollDirection == .horizontal
+        {
+            _collectionView_.frame = CGRect(x: 0, y: 0, width: bounds.width + minimumSpacing, height: frame.height)
+        }
+        else
+        {
+            _collectionView_.frame = CGRect(x: 0, y: 0, width: bounds.width, height: frame.height  + minimumSpacing)
+        }
     }
 }
 
 
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
-extension ZSScrollCarouseFullView {
+extension ZSScrollCarouselFullView {
     
     public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellClass.zs_identifier, for: indexPath) as! ZSScrollCarouseCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellClass.zs_identifier, for: indexPath) as! ZSScrollCarouselCell
         
         if collectionViewLayout.scrollDirection == .horizontal
         {
@@ -83,7 +90,7 @@ extension ZSScrollCarouseFullView {
 
 
 // MARK: - UIScrollViewDelegate
-extension ZSScrollCarouseFullView {
+extension ZSScrollCarouselFullView {
     
     func calculationLoopScrollOffset() {
         

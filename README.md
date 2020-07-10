@@ -12,8 +12,9 @@ Josh, 376019018@qq.com
 
 1. 跑马灯，cube 动画，可自定义 cube view
 2. 循环轮播，复用 Cell
-3. 可自定义Cell，水平、垂直滚动
-4. 可自定义FlowLayout
+3. 球体无限轮播
+4. 可自定义Cell，水平、垂直滚动
+5. 可自定义FlowLayout
 
 ## 版本日志
 

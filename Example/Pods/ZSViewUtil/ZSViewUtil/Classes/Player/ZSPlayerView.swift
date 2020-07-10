@@ -19,57 +19,67 @@ import AVKit
     /// - Parameters:
     ///   - playerView: playerView
     ///   - error: 错误原因
-    @objc optional func zs_movieFailed(_ playerView: ZSPlayerView, error: Error?)
+    @objc optional func zs_palyer(_ playerView: ZSPlayerView, didOccur error: Error?)
     
-    /// 准备状态，播放缓冲完成，可以播放
+    /// 准备状态，播放缓冲完成，可以播放，若 isAutoStartPlayEnable = false 时需要手动调用 play
     /// - Parameter playerView: playerView
-    @objc optional func zs_movieReadyToPlay(_ playerView: ZSPlayerView)
+    @objc optional func zs_playerReadyToPlay(_ playerView: ZSPlayerView)
     
     /// 未知状态，播放源出现未知错误
     /// - Parameter playerView: playerView
-    @objc optional func zs_movieUnknown(_ playerView: ZSPlayerView)
+    @objc optional func zs_playerUnknown(_ playerView: ZSPlayerView)
     
-    /// 结束状态，播放完毕
+    /// 结束状态，播放完毕，若 isLoopEnable = true 时将从头开始重新播放
     /// - Parameter playerView: playerView
-    @objc optional func zs_movieToEnd(_ playerView: ZSPlayerView)
+    @objc optional func zs_playerToEnd(_ playerView: ZSPlayerView)
     
     /// 跳转状态，准备进入播放
     /// - Parameter playerView: playerView
-    @objc optional func zs_movieJumped(_ playerView: ZSPlayerView)
+    @objc optional func zs_playerJumped(_ playerView: ZSPlayerView)
     
     /// 闲置状态，加载中
     /// - Parameter playerView: playerView
-    @objc optional func zs_movieStalle(_ playerView: ZSPlayerView)
+    @objc optional func zs_playerStalle(_ playerView: ZSPlayerView)
     
-    /// 资源加载完毕，返回当前正在播放的播放时长
+    /// 当前播放时长监测
     /// - Parameters:
     ///   - playerView: playerView
-    ///   - second: 时长
-    @objc optional func zs_movieCurrentTime(_ playerView: ZSPlayerView, second: TimeInterval)
+    ///   - second: 当前正在播放的播放时长，单位秒
+    @objc optional func zs_player(_ playerView: ZSPlayerView, currentTime second: TimeInterval)
     
     /// 播放状态改变
     /// - Parameters:
     ///   - playerView: playerView
     ///   - status: 当前播放状态
-    @objc optional func zs_movieChangePalyStatus(_ playerView: ZSPlayerView, status: ZSPlayerStatus)
+    @objc optional func zs_player(_ playerView: ZSPlayerView, didChangePaly status: ZSPlayerStatus)
     
     /// App进入后台
     /// - Parameter playerView: playerView
-    @objc optional func zs_movieEnterBackground(_ playerView: ZSPlayerView)
+    @objc optional func zs_playerEnterBackground(_ playerView: ZSPlayerView)
     
     /// App进入前台
     /// - Parameter playerView: playerView
-    @objc optional func zs_movieEnterForeground(_ playerView: ZSPlayerView)
+    @objc optional func zs_playerEnterForeground(_ playerView: ZSPlayerView)
 }
 
 @objcMembers public class ZSPlayerView: UIView {
     
+    /// 播放地址String
     public var urlString: String?
-    public var url: URL?
-    public weak var delegate: ZSPlayerViewDelegate?
-    public var isShouldLoop: Bool = false
-    public var isShouldAutoplay: Bool = false
     
+    /// 播放地址URL
+    public var url: URL?
+    
+    /// 播放代理
+    public weak var delegate: ZSPlayerViewDelegate?
+    
+    /// 是否开启循环播放
+    public var isLoopEnable: Bool = false
+    
+    /// 是否开启自动播放，当播放器处于preparePlay时，自动开始播放
+    public var isAutoStartPlayEnable: Bool = false
+    
+    /// 视频填充的方式
     public var videoGravity: AVLayerVideoGravity = .resizeAspect {
         
         willSet {
@@ -77,23 +87,30 @@ import AVKit
         }
     }
     
+    /// 播放器
     public var player: AVPlayer? {
         
         return av_playerLayer.player
     }
     
+    /// 播放状态
+    private var _playStatus_: ZSPlayerStatus = .loading {
+        didSet {
+            delegate?.zs_player?(self, didChangePaly: playStatus)
+        }
+    }
     public var playStatus: ZSPlayerStatus {
         
         return _playStatus_
     }
     
-    public var endTimeValue: Double {
+    /// 媒体总时长
+    public var totalTimeValue: TimeInterval {
         
         guard let av_playerItem = av_playerLayer.player?.currentItem else { return 0 }
         return CMTimeGetSeconds(av_playerItem.asset.duration)
     }
     
-    private var _playStatus_: ZSPlayerStatus = .loading
     private var isSeekToTime: Bool = false
     
     private lazy var av_playerLayer: AVPlayerLayer = {
@@ -132,33 +149,13 @@ import AVKit
 }
 
 
-
-// MARK: - 定时器，失败自动重新加载
-private extension Timer {
-    
-    class func supportiOS_10EarlierTimer(_ interval: TimeInterval, repeats: Bool, block: @escaping (_ timer: Timer) -> Void) -> Timer {
-        
-        if #available(iOS 10.0, *) {
-            return Timer.init(timeInterval: interval, repeats: repeats, block: block)
-        } else {
-            return Timer.init(timeInterval: interval, target: self, selector: #selector(player_runTimer(_:)), userInfo: block, repeats: repeats)
-        }
-    }
-    
-    @objc private class func player_runTimer(_ timer: Timer) -> Void {
-        
-        guard let block: ((Timer) -> Void) = timer.userInfo as? ((Timer) -> Void) else { return }
-        
-        block(timer)
-    }
-}
-
+// TODO: 播放加载失败重试
 @objc public extension ZSPlayerView {
     
     private func reloadStartTimer() {
         guard timer == nil else { return }
         
-        timer = Timer.supportiOS_10EarlierTimer(1, repeats: true, block: { [weak self] (timer) in
+        timer = Timer.player_supportiOS_10EarlierTimer(1, repeats: true, block: { [weak self] (timer) in
             self?.reloadRun()
         })
         RunLoop.current.add(timer!, forMode: .common)
@@ -184,32 +181,27 @@ private extension Timer {
         if currentReloadCount >= reloadCount {
             reloadStopTimer()
             let error: Error? = av_playerLayer.player?.currentItem?.error
-            delegate?.zs_movieFailed?(self, error: error == nil ? av_playerLayer.player?.error : error)
+            delegate?.zs_palyer?(self, didOccur: error == nil ? av_playerLayer.player?.error : error)
         }
     }
 }
 
 
-
-
-// MARK: - player操作
+// TODO: - Player配置
 @objc public extension ZSPlayerView {
     
     func preparePlay() {
         
-        guard urlString != nil else {
-            
-            let error: NSError = NSError.init(domain: "未设置资源的url", code: 404, userInfo: [NSLocalizedDescriptionKey : "URL资源加载错误"])
-            delegate?.zs_movieFailed?(self, error: error)
-            return
-        }
-        
-        _playStatus_ = .loading
-        delegate?.zs_movieChangePalyStatus?(self, status: _playStatus_)
-        
         var playUrl: URL? = url
         
-        if playUrl == nil {
+        if playUrl == nil
+        {
+            guard urlString != nil else {
+                
+                let error: NSError = NSError.init(domain: "未设置资源的url", code: 404, userInfo: [NSLocalizedDescriptionKey : "URL资源加载错误"])
+                delegate?.zs_palyer?(self, didOccur: error)
+                return
+            }
             
             let predcate: NSPredicate = NSPredicate(format: "SELF MATCHES%@", #"http[s]{0,1}://[^\s]*"#)
             playUrl = predcate.evaluate(with: urlString) ? URL(string: urlString!) : URL(fileURLWithPath: urlString!)
@@ -217,6 +209,7 @@ private extension Timer {
         
         guard playUrl != nil else { return }
         
+        _playStatus_ = .loading
         av_playerLayer.player = AVPlayer(url: playUrl!)
         
         addPlayerTimeObserver()
@@ -226,19 +219,16 @@ private extension Timer {
     func play() {
         av_playerLayer.player?.play()
         _playStatus_ = .playing
-        delegate?.zs_movieChangePalyStatus?(self, status: _playStatus_)
     }
     
     func pause() {
         av_playerLayer.player?.pause()
         _playStatus_ = .pasue
-        delegate?.zs_movieChangePalyStatus?(self, status: _playStatus_)
     }
     
     func stop() {
         
         _playStatus_ = .stop
-        delegate?.zs_movieChangePalyStatus?(self, status: _playStatus_)
         
         av_playerLayer.player?.pause()
         av_playerLayer.player?.rate = 0
@@ -254,7 +244,7 @@ private extension Timer {
     func seek(to pos: TimeInterval, isAccurate: Bool = true) {
         isSeekToTime = true
         pause()
-        let time: CMTime = CMTime(value: CMTimeValue(endTimeValue * pos), timescale: CMTimeScale(1))
+        let time: CMTime = CMTime(value: CMTimeValue(totalTimeValue * pos), timescale: CMTimeScale(1))
         
         if isAccurate {
             av_playerLayer.player?.seek(to: time, toleranceBefore: .zero, toleranceAfter: .zero, completionHandler: { [unowned self] (finished) in
@@ -273,10 +263,9 @@ private extension Timer {
 
 
 
-// MARK: - Observer
+// TODO: - 事件观察和通知
 @objc public extension ZSPlayerView {
     
-    // MARK: - 添加事件观察和通知
     private func addPlayerItemObserver() {
         av_playerLayer.player?.currentItem?.addObserver(self, forKeyPath: "status", options: .new, context: nil)
         av_playerLayer.player?.currentItem?.addObserver(self, forKeyPath: "loadedTimeRanges", options: .new, context: nil)
@@ -294,7 +283,7 @@ private extension Timer {
             
             guard !self.isSeekToTime else { return }
             
-            self.delegate?.zs_movieCurrentTime?(self, second: Double(time.value * 1) / Double(time.timescale))
+            self.delegate?.zs_player?(self, currentTime: Double(time.value * 1) / Double(time.timescale))
         })
     }
     
@@ -317,37 +306,32 @@ private extension Timer {
     // TODO: 通知#selector方法
     @objc private func movieToEnd(notification: Notification) {
         
-        guard av_playerLayer.player?.currentItem?.currentTime().seconds == endTimeValue else { return }
+        guard av_playerLayer.player?.currentItem?.currentTime().seconds == totalTimeValue else { return }
         
         _playStatus_ = .end
-        delegate?.zs_movieChangePalyStatus?(self, status: _playStatus_)
         
-        guard isShouldLoop else {
-            delegate?.zs_movieToEnd?(self)
-            return
-        }
+        delegate?.zs_playerToEnd?(self)
         
-        seek(to: 0)
+        isLoopEnable ? seek(to: 0) : nil
     }
     
     @objc private func movieJumped(notification: Notification) {
-        delegate?.zs_movieJumped?(self)
+        delegate?.zs_playerJumped?(self)
     }
     
     @objc private func movieStalle(notification: Notification) {
         _playStatus_ = .loading
-        delegate?.zs_movieChangePalyStatus?(self, status: _playStatus_)
-        delegate?.zs_movieStalle?(self)
+        delegate?.zs_playerStalle?(self)
     }
     
     @objc private func enterBackground(notification: Notification) {
         
-        delegate?.zs_movieEnterBackground?(self)
+        delegate?.zs_playerEnterBackground?(self)
     }
     
     @objc private func enterForeground(notification: Notification) {
         
-        delegate?.zs_movieEnterForeground?(self)
+        delegate?.zs_playerEnterForeground?(self)
     }
     
     
@@ -361,21 +345,16 @@ private extension Timer {
         case .readyToPlay:
             _playStatus_ = .prepare
             
-            delegate?.zs_movieChangePalyStatus?(self, status: _playStatus_)
-            
             reloadStopTimer()
             
-            guard isShouldAutoplay else {
-                delegate?.zs_movieReadyToPlay?(self)
-                return
-            }
+            delegate?.zs_playerReadyToPlay?(self)
             
-            play()
+            isAutoStartPlayEnable ? play() : nil
             
             break
             
         case .unknown:
-            delegate?.zs_movieUnknown?(self)
+            delegate?.zs_playerUnknown?(self)
             break
             
         case .failed:
@@ -405,5 +384,26 @@ private extension Timer {
         default:
             break
         }
+    }
+}
+
+
+// MARK: - 定时器，失败自动重新加载
+private extension Timer {
+    
+    class func player_supportiOS_10EarlierTimer(_ interval: TimeInterval, repeats: Bool, block: @escaping (_ timer: Timer) -> Void) -> Timer {
+        
+        if #available(iOS 10.0, *) {
+            return Timer.init(timeInterval: interval, repeats: repeats, block: block)
+        } else {
+            return Timer.init(timeInterval: interval, target: self, selector: #selector(player_runTimer(_:)), userInfo: block, repeats: repeats)
+        }
+    }
+    
+    @objc private class func player_runTimer(_ timer: Timer) -> Void {
+        
+        guard let block: ((Timer) -> Void) = timer.userInfo as? ((Timer) -> Void) else { return }
+        
+        block(timer)
     }
 }

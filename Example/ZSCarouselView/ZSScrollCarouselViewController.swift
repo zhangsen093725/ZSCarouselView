@@ -1,5 +1,5 @@
 //
-//  ZSScrollCarouseViewController.swift
+//  ZSScrollCarouselViewController.swift
 //  ZSViewUtil_Example
 //
 //  Created by 张森 on 2020/5/20.
@@ -15,7 +15,7 @@ public func KColor(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat, _ alpha: C
     return .init(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha)
 }
 
-class ZSScrollCarouseViewController: UIViewController, ZSScrollCarouseViewDelegate, ZSScrollCarouseViewDataSource {
+class ZSScrollCarouselViewController: UIViewController, ZSScrollCarouselViewDelegate, ZSScrollCarouselViewDataSource {
 
     let imageFiles = ["http://ww1.sinaimg.cn/large/b02ee545gy1gdmhz2191mj205603rt8j.jpg",
     "http://ww1.sinaimg.cn/large/b02ee545gy1gdnhcee791j2048097dfs.jpg",
@@ -26,37 +26,37 @@ class ZSScrollCarouseViewController: UIViewController, ZSScrollCarouseViewDelega
     "http://ww1.sinaimg.cn/large/b02ee545gy1gg85sa4lsuj20zg0buta4.jpg",
     "http://ww1.sinaimg.cn/large/b02ee545gy1gg8wst5idmj21us0xedki.jpg"]
     
-    lazy var carouseCustomView: ZSScrollCarouseCustomView = {
+    lazy var carouseCustomView: ZSScrollCarouselCustomView = {
         
         let layout = ZSFocusFlowLayout()
         layout.minimumLineSpacing = 0
         layout.itemSize = CGSize(width: 300, height: 100)
         layout.scrollDirection = .vertical
         
-        let loopScroll = ZSScrollCarouseCustomView(collectionViewLayout: layout, cellClass: ZSScrollCarouseCustomCell.self)
+        let loopScroll = ZSScrollCarouselCustomView(collectionViewLayout: layout, cellClass: ZSScrollCarouselCustomCell.self)
         loopScroll.delegate = self
         loopScroll.dataSource = self
         view.addSubview(loopScroll)
         return loopScroll
     }()
     
-    lazy var carouseCustomView2: ZSScrollCarouseCustomView = {
+    lazy var carouseCustomView2: ZSScrollCarouselCustomView = {
         
         let layout = ZSFocusFlowLayout()
         layout.minimumLineSpacing = 0
         layout.itemSize = CGSize(width: 200, height: 150)
         layout.scrollDirection = .horizontal
         
-        let loopScroll = ZSScrollCarouseCustomView(collectionViewLayout: layout, cellClass: ZSScrollCarouseCustomCell.self)
+        let loopScroll = ZSScrollCarouselCustomView(collectionViewLayout: layout, cellClass: ZSScrollCarouselCustomCell.self)
         loopScroll.delegate = self
         loopScroll.dataSource = self
         view.addSubview(loopScroll)
         return loopScroll
     }()
     
-    lazy var carouseFullView: ZSScrollCarouseFullView = {
+    lazy var carouseFullView: ZSScrollCarouselFullView = {
             
-        let loopScroll = ZSScrollCarouseFullView(scrollDirection: .horizontal, cellClass: ZSScrollCarouseCustomCell.self)
+        let loopScroll = ZSScrollCarouselFullView(scrollDirection: .horizontal, cellClass: ZSScrollCarouselCustomCell.self)
             loopScroll.minimumSpacing = 10
             loopScroll.delegate = self
             loopScroll.dataSource = self
@@ -78,21 +78,21 @@ class ZSScrollCarouseViewController: UIViewController, ZSScrollCarouseViewDelega
     }
     
     
-    func zs_carouseView(_ carouseView: ZSScrollCarouseView, didSelectedItemFor index: Int) {
+    func zs_carouseView(_ carouseView: ZSScrollCarouselView, didSelectedItemFor index: Int) {
          print("\(carouseView) index: \(index)")
     }
     
-    func zs_carouseViewDidScroll(_ carouseView: ZSScrollCarouseView, index: Int) {
+    func zs_carouseViewDidScroll(_ carouseView: ZSScrollCarouselView, index: Int) {
         print("\(carouseView) index: \(index)")
     }
     
-    func zs_numberOfItemcarouseView(_ carouseView: ZSScrollCarouseView) -> Int {
+    func zs_numberOfItemcarouseView(_ carouseView: ZSScrollCarouselView) -> Int {
         return imageFiles.count
     }
     
-    func zs_configCarouseCell(_ cell: ZSScrollCarouseCell, itemAt index: Int) {
+    func zs_configCarouseCell(_ cell: ZSScrollCarouselCell, itemAt index: Int) {
         
-        let _cell = cell as? ZSScrollCarouseCustomCell
+        let _cell = cell as? ZSScrollCarouselCustomCell
         
         _cell?.label.backgroundColor = .black
         _cell?.label.textColor = .white

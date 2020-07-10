@@ -1,5 +1,5 @@
 //
-//  ZSScrollCarouseCustomCell.swift
+//  ZSScrollCarouselCustomCell.swift
 //  ZSCarouselView_Example
 //
 //  Created by Josh on 2020/7/7.
@@ -9,7 +9,7 @@
 import UIKit
 import ZSCarouselView
 
-class ZSScrollCarouseCustomCell: ZSScrollCarouseCell {
+class ZSScrollCarouselCustomCell: ZSScrollCarouselCell {
     
     public lazy var label: UILabel = {
        

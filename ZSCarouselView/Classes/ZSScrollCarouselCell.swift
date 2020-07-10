@@ -7,7 +7,7 @@
 
 import UIKit
 
-@objcMembers open class ZSScrollCarouseCell: UICollectionViewCell {
+@objcMembers open class ZSScrollCarouselCell: UICollectionViewCell {
  
     open class var zs_identifier: String { return NSStringFromClass(self) }
     

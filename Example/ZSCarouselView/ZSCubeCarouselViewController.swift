@@ -1,5 +1,5 @@
 //
-//  ZSCubeCarouseViewController.swift
+//  ZSCubeCarouselViewController.swift
 //  ZSViewUtil_Example
 //
 //  Created by 张森 on 2020/5/20.
@@ -9,14 +9,14 @@
 import UIKit
 import ZSCarouselView
 
-class ZSCubeCarouseViewController: UIViewController, ZSCubeCarouseViewDataSource, ZSCubeCarouseViewDelegate {
+class ZSCubeCarouselViewController: UIViewController, ZSCubeCarouselViewDataSource, ZSCubeCarouselViewDelegate {
     
     let videoFile = ["loop cube one",
                      "loop cube two"]
     
-    lazy var loopCub: ZSCubeCarouseView = {
+    lazy var loopCub: ZSCubeCarouselView = {
         
-        let view = ZSCubeCarouseView()
+        let view = ZSCubeCarouselView()
         view.delegate = self
         view.dataSource = self
         self.view.addSubview(view)
@@ -52,24 +52,23 @@ class ZSCubeCarouseViewController: UIViewController, ZSCubeCarouseViewDataSource
         loopCub.frame = CGRect(x: 100, y: 200, width: 200, height: 50)
     }
     
-    func zs_numberOfItemCubeCarouseView(_ cubeCarouseView: ZSCubeCarouseView) -> Int {
+    func zs_numberOfItemCubeCarouseView(_ cubeCarouseView: ZSCubeCarouselView) -> Int {
         
         return videoFile.count
     }
     
-    func zs_cubeCarouseViewContentView(_ cubeCarouseView: ZSCubeCarouseView) -> UIView {
+    func zs_cubeCarouseViewContentView(_ cubeCarouseView: ZSCubeCarouselView) -> UIView {
         
         cubLabel.text = videoFile.first
-        cubLabel.backgroundColor = .red
                
         return cubLabel
     }
     
-    func zs_cubeCarouseViewView(_ cubeCarouseView: ZSCubeCarouseView, didSelectedItemFor index: Int) {
+    func zs_cubeCarouseViewView(_ cubeCarouseView: ZSCubeCarouselView, didSelectedItemFor index: Int) {
         
     }
     
-    func zs_cubeCarouseViewFinishView(_ cubeCarouseView: ZSCubeCarouseView, index: Int) {
+    func zs_cubeCarouseViewFinishView(_ cubeCarouseView: ZSCubeCarouselView, index: Int) {
         
         cubLabel.text = videoFile[index]
     }

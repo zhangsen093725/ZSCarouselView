@@ -1,5 +1,5 @@
 //
-//  ZSScrollCarouseCustomView.swift
+//  ZSScrollCarouselCustomView.swift
 //  Pods-ZSCarouselView_Example
 //
 //  Created by Josh on 2020/7/6.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-@objcMembers open class ZSScrollCarouseCustomView: ZSScrollCarouseView {
+@objcMembers open class ZSScrollCarouselCustomView: ZSScrollCarouselView {
     
     var _isBeginDragging_: Bool = false
     
@@ -20,7 +20,7 @@ import UIKit
     }
     
     public convenience init(collectionViewLayout: UICollectionViewFlowLayout,
-                            cellClass: ZSScrollCarouseCell.Type = ZSScrollCarouseCell.self) {
+                            cellClass: ZSScrollCarouselCell.Type = ZSScrollCarouselCell.self) {
         self.init(frame: .zero)
         _collectionViewLayout_ = collectionViewLayout
         _cellClass_ = cellClass
@@ -34,7 +34,7 @@ import UIKit
 
 
 // MARK: - UIScrollViewDelegate
-extension ZSScrollCarouseCustomView {
+extension ZSScrollCarouselCustomView {
     
     func calculationLoopScrollOffset() {
         

@@ -1,5 +1,5 @@
 //
-//  ZSScrollCarouseView.swift
+//  ZSScrollCarouselView.swift
 //  Pods-ZSCarouselView_Example
 //
 //  Created by Josh on 2020/7/6.
@@ -7,41 +7,41 @@
 
 import UIKit
 
-@objc public protocol ZSScrollCarouseViewDataSource {
+@objc public protocol ZSScrollCarouselViewDataSource {
     
     /// 滚动视图的总数
     /// - Parameter carouseView: carouseView
-    func zs_numberOfItemcarouseView(_ carouseView: ZSScrollCarouseView) -> Int
+    func zs_numberOfItemcarouseView(_ carouseView: ZSScrollCarouselView) -> Int
     
     /// 滚动到的视图
     /// - Parameters:
     ///   - cell: 当前的carouseCell
     ///   - index: 当前的index
-    func zs_configCarouseCell(_ cell: ZSScrollCarouseCell, itemAt index: Int)
+    func zs_configCarouseCell(_ cell: ZSScrollCarouselCell, itemAt index: Int)
 }
 
-@objc public protocol ZSScrollCarouseViewDelegate {
+@objc public protocol ZSScrollCarouselViewDelegate {
     
     /// 滚动视图Item的点击
     /// - Parameters:
     ///   - carouseView: carouseView
     ///   - index: 当前的index
-    func zs_carouseView(_ carouseView: ZSScrollCarouseView, didSelectedItemFor index: Int)
+    func zs_carouseView(_ carouseView: ZSScrollCarouselView, didSelectedItemFor index: Int)
     
     /// 滚动视图的回调
     /// - Parameters:
     ///   - carouseView: carouseView
     ///   - index: 当前的index
-    func zs_carouseViewDidScroll(_ carouseView: ZSScrollCarouseView, index: Int)
+    func zs_carouseViewDidScroll(_ carouseView: ZSScrollCarouselView, index: Int)
 }
 
-@objcMembers open class ZSScrollCarouseView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+@objcMembers open class ZSScrollCarouselView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     /// 滚动视图的数据配置
-    public weak var dataSource: ZSScrollCarouseViewDataSource?
+    public weak var dataSource: ZSScrollCarouselViewDataSource?
     
     /// 滚动视图的交互
-    public weak var delegate: ZSScrollCarouseViewDelegate?
+    public weak var delegate: ZSScrollCarouselViewDelegate?
     
     /// 是否开启自动滚动，默认为 true
     public var isAutoScroll: Bool = true
@@ -61,8 +61,8 @@ import UIKit
     public var collectionViewLayout: UICollectionViewFlowLayout { return _collectionViewLayout_ }
     
     /// cellClass
-    var _cellClass_: ZSScrollCarouseCell.Type!
-    public var cellClass: ZSScrollCarouseCell.Type { return _cellClass_ }
+    var _cellClass_: ZSScrollCarouselCell.Type!
+    public var cellClass: ZSScrollCarouselCell.Type { return _cellClass_ }
     
     var _itemCount_: Int = 0
     var _loopScrollItemCount_: Int = 0
@@ -91,7 +91,7 @@ import UIKit
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
-        _cellClass_ = ZSScrollCarouseCell.self
+        _cellClass_ = ZSScrollCarouselCell.self
         _collectionViewLayout_ = UICollectionViewFlowLayout()
     }
     
@@ -171,7 +171,7 @@ import UIKit
 
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
-extension ZSScrollCarouseView {
+extension ZSScrollCarouselView {
     
     func scrollCarouseIndex(from page: Int) -> Int {
         
@@ -196,7 +196,7 @@ extension ZSScrollCarouseView {
     
     open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellClass.zs_identifier, for: indexPath) as! ZSScrollCarouseCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellClass.zs_identifier, for: indexPath) as! ZSScrollCarouselCell
         
         dataSource?.zs_configCarouseCell(cell, itemAt: scrollCarouseIndex(from: indexPath.item))
         
@@ -227,7 +227,7 @@ extension ZSScrollCarouseView {
 
 
 // MARK: - UIScrollViewDelegate
-extension ZSScrollCarouseView {
+extension ZSScrollCarouselView {
     
     open func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         endAutoLoopScroll()
