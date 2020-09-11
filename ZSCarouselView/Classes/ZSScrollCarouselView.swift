@@ -36,7 +36,7 @@ import UIKit
 }
 
 @objcMembers open class ZSScrollCarouselView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+    
     /// 滚动视图的数据配置
     public weak var dataSource: ZSScrollCarouselViewDataSource?
     
@@ -69,7 +69,9 @@ import UIKit
     var _cachePage_: Int = 1
     var _timer_: Timer?
     
-    lazy var _collectionView_: UICollectionView! = {
+    public var collectionView: UICollectionView { return _collectionView_ }
+    
+    lazy var _collectionView_: UICollectionView = {
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
         
@@ -104,7 +106,7 @@ import UIKit
         
         _collectionView_.frame = bounds
     }
-
+    
     open func configCollectionView(_ collectionView: UICollectionView) {
         collectionView.isPagingEnabled = true
         collectionView.register(cellClass, forCellWithReuseIdentifier: cellClass.zs_identifier)
@@ -204,7 +206,7 @@ extension ZSScrollCarouselView {
     }
     
     open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         return self.collectionViewLayout.itemSize
     }
     
