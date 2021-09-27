@@ -42,9 +42,9 @@ class ZSScrollCarouselViewController: UIViewController, ZSScrollCarouselViewDele
     
     lazy var carouseCustomView2: ZSScrollCarouselCustomView = {
         
-        let layout = ZSFocusFlowLayout()
-        layout.minimumLineSpacing = 0
-        layout.itemSize = CGSize(width: 200, height: 150)
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 10
+        layout.itemSize = CGSize(width: 260, height: 150)
         layout.scrollDirection = .horizontal
         
         let loopScroll = ZSScrollCarouselCustomView(collectionViewLayout: layout, cellClass: ZSScrollCarouselCustomCell.self)
