@@ -116,6 +116,27 @@ import UIKit
         _collectionView_.reloadData()
     }
     
+    open func scrollToItem(at page: Int, animated: Bool) {
+        
+        var index = page
+        
+        if isLoopScroll
+        {
+            guard page < _loopScrollItemCount_ else { return }
+
+            index = page + 1
+            index = page == _loopScrollItemCount_ - 1 ? _itemCount_ : index
+            index = page == 0 ? 1 : index
+        }
+        else
+        {
+            guard page < _itemCount_ else { return }
+        }
+        
+        let isHorizontal = collectionViewLayout.scrollDirection == .horizontal
+        _collectionView_.scrollToItem(at: IndexPath(item: index, section: 0), at: isHorizontal ? .centeredHorizontally : .centeredVertically, animated: animated)
+    }
+    
     func beginAutoLoopScroll() {
         
         guard isAutoScroll else { return }
@@ -139,7 +160,7 @@ import UIKit
         
         let isHorizontal = collectionViewLayout.scrollDirection == .horizontal
         
-        if isLoopScroll == false && _cachePage_ + 1 == _loopScrollItemCount_
+        if isLoopScroll == false && _cachePage_ + 1 == _itemCount_
         {
             endAutoLoopScroll()
             return
@@ -197,9 +218,9 @@ extension ZSScrollCarouselView {
     open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         _itemCount_ = dataSource?.zs_numberOfItemcarouseView(self) ?? 0
-        _loopScrollItemCount_ = isLoopScroll ? _itemCount_ + 2 : _itemCount_
+        _loopScrollItemCount_ = _itemCount_ + 2
         
-        return _loopScrollItemCount_
+        return isLoopScroll ? _loopScrollItemCount_ : _itemCount_
     }
     
     open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

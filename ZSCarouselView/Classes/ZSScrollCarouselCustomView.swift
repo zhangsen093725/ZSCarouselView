@@ -123,11 +123,17 @@ extension ZSScrollCarouselCustomView {
         
         _cachePage_ = currentPage
         
-        guard currentPage != _loopScrollItemCount_ - 1 else { return }
-        
-        guard currentPage != 0 else { return }
-        
-        delegate?.zs_carouseViewDidScroll(self, index: currentPage - 1)
+        if isLoopScroll
+        {
+            guard currentPage != _loopScrollItemCount_ - 1 else { return }
+            guard currentPage != 0 else { return }
+            delegate?.zs_carouseViewDidScroll(self, index: currentPage - 1)
+        }
+        else
+        {
+            guard currentPage != _itemCount_ - 1 else { return }
+            delegate?.zs_carouseViewDidScroll(self, index: currentPage)
+        }
     }
     
     open override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
