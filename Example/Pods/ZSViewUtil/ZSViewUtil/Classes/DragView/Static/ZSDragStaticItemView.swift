@@ -9,6 +9,8 @@ import UIKit
 
 @objcMembers open class ZSDragStaticItemView: UICollectionViewCell {
     
+    open class var zs_identifier: String { return NSStringFromClass(self) }
+    
     public var itemGestureRecognizerHandle: ((_ gestureRecognizer: UIGestureRecognizer)->Void)?
     
     private lazy var backView: UIView = {

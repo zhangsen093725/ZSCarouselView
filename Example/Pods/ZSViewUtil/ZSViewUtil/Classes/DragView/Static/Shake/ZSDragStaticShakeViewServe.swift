@@ -9,18 +9,21 @@ import UIKit
 
 @objcMembers open class ZSDragStaticShakeViewServe: ZSDragStaticCollectionServe {
     
+    /// 是否正在Shake
     public var isShaking: Bool = false
     
     private var displayLink: CADisplayLink?
     
+    /// Shake的动画持续时间
     open var displayCount: Int = 5
     
     deinit {
         stopDisplay()
     }
     
-    open override func configCollectionView(_ collectionView: UICollectionView) {
-        collectionView.register(ZSDragStaticShakeItemView.self, forCellWithReuseIdentifier: NSStringFromClass(ZSDragStaticShakeItemView.self))
+    open override func zs_bindCollectionView(_ collectionView: UICollectionView, register cellClass: ZSDragStaticItemView.Type = ZSDragStaticItemView.self) {
+        
+        super.zs_bindCollectionView(collectionView, register: ZSDragStaticShakeItemView.self)
     }
     
     func itemViewAnimation(isBegin: Bool) {

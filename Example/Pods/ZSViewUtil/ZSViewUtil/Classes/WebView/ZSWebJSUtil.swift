@@ -9,12 +9,12 @@
 import WebKit
 
 @objc public protocol ZSWebJSToolDelegate {
-    func zs_userContentController(_ function: String, params: [String: Any])
-    func zs_userContentController(_ function: String, array: [Any])
-    func zs_userContentController(_ function: String, content: String)
-    func zs_userContentController(_ function: String, number: NSNumber)
-    func zs_userContentController(_ function: String)
-    @objc optional func zs_userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage)
+    @objc optional func zs_userContentController(_ function: String, params: [String: Any])
+    @objc optional func zs_userContentController(_ function: String, array: [Any])
+    @objc optional func zs_userContentController(_ function: String, content: String)
+    @objc optional func zs_userContentController(_ function: String, number: NSNumber)
+    @objc optional func zs_userContentController(_ function: String)
+    func zs_userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage)
 }
 
 @objcMembers public class ZSWebJSTool: NSObject, WKScriptMessageHandler {
@@ -59,20 +59,20 @@ import WebKit
     
     
     public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        delegate?.zs_userContentController?(userContentController, didReceive: message)
+        delegate?.zs_userContentController(userContentController, didReceive: message)
         
         if let array = message.body as? [Any] {
-            delegate?.zs_userContentController(message.name, array: array)
+            delegate?.zs_userContentController?(message.name, array: array)
             return
         }
         
         if let params = message.body as? [String: Any] {
-            delegate?.zs_userContentController(message.name, params: params)
+            delegate?.zs_userContentController?(message.name, params: params)
             return
         }
         
         if let number = message.body as? NSNumber {
-            delegate?.zs_userContentController(message.name, number: number)
+            delegate?.zs_userContentController?(message.name, number: number)
             return
         }
         
@@ -83,19 +83,19 @@ import WebKit
             if let object = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
                 
                 if let params = object as? [String : Any] {
-                    delegate?.zs_userContentController(message.name, params: params)
+                    delegate?.zs_userContentController?(message.name, params: params)
                     return
                 }
                 
                 if let array = object as? [Any] {
-                    delegate?.zs_userContentController(message.name, array: array)
+                    delegate?.zs_userContentController?(message.name, array: array)
                     return
                 }
             }
-            delegate?.zs_userContentController(message.name, content: content)
+            delegate?.zs_userContentController?(message.name, content: content)
             return
         }
         
-        delegate?.zs_userContentController(message.name)
+        delegate?.zs_userContentController?(message.name)
     }
 }

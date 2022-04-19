@@ -139,6 +139,12 @@ import UIKit
         
         let isHorizontal = collectionViewLayout.scrollDirection == .horizontal
         
+        if isLoopScroll == false && _cachePage_ + 1 == _loopScrollItemCount_
+        {
+            endAutoLoopScroll()
+            return
+        }
+        
         _collectionView_.scrollToItem(at: IndexPath(item: _cachePage_ + 1, section: 0), at: isHorizontal ? .centeredHorizontally : .centeredVertically, animated: true)
     }
     

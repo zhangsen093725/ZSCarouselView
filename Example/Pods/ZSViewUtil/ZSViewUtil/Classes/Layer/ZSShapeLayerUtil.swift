@@ -9,6 +9,11 @@ import UIKit
 
 @objc public extension CAShapeLayer {
     
+    /// 圆角图层
+    /// - Parameters:
+    ///   - corners: 圆角位置
+    ///   - cornerRadius: 圆角半径
+    ///   - layer: 添加到的View的图层
     @discardableResult
     class func zs_init(roundingCorners corners: UIRectCorner,
                        cornerRadius: CGFloat,

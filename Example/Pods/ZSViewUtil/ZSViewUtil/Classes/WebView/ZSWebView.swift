@@ -164,18 +164,21 @@ import JavaScriptCore
         
         guard object as? WKWebView == webView else { return }
         
-        if keyPath == "title" {
+        if keyPath == "title"
+        {
             delegate?.zs_webView?(webView, title: webView.title ?? "unknow")
             return
         }
         
-        if keyPath == "estimatedProgress" {
+        if keyPath == "estimatedProgress"
+        {
             let progress: NSNumber = change?[.newKey] as? NSNumber ?? NSNumber(value: 0)
             delegate?.zs_webView?(webView, loadFor: progress.floatValue)
             return
         }
         
-        if keyPath == "canGoBack" {
+        if keyPath == "canGoBack"
+        {
             isCanBack = change?[.newKey] as! Bool
             delegate?.zs_webView?(webView, isRootWeb: !isCanBack)
         }
@@ -218,7 +221,8 @@ import JavaScriptCore
                         decidePolicyFor navigationAction: WKNavigationAction,
                         decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
-        if delegate?.zs_webView?(webView, isDecidePolicy: navigationAction) ?? true {
+        if delegate?.zs_webView?(webView, isDecidePolicy: navigationAction) ?? true
+        {
             decisionHandler(.allow)
             return
         }

@@ -11,42 +11,31 @@ import UIKit
     
     /// 初始化渐变Layer
     /// - Parameters:
-    ///   - locations: [渐变的位置，区间在[0,1]]
-    ///   - colors: [对应的渐变位置的颜色]
-    ///   - startPointX: 渐变的水平起点，区间在[0,1]，默认为 0
-    ///   - endPointX: 渐变的水平终点，区间在[0,1]，默认为 1
-    ///   - startPointY: 渐变的垂直起点，区间在[0,1]，默认为 0
-    ///   - endPointY: 渐变的垂直终点，区间在[0,1]，默认为 1
+    ///   - locations: [颜色改变的位置，范围[0, 1]，0表示头部，1表示尾部，0.5表示中心，一个位置对应一个颜色]
+    ///   - colors: [渐变的颜色，至少2个，和需要改变颜色的位置一一对应]
+    ///   - startPoint: 渐变颜色的起始点，范围[0, 1], (0, 0）表示左上角，(0, 1)表示左下角，(1, 0)表示右上角，(1, 1)表示右下角
+    ///   - endPoint: 渐变颜色的终止点，范围[0, 1], (0, 0）表示左上角，(0, 1)表示左下角，(1, 0)表示右上角，(1, 1)表示右下角
     @discardableResult
     class func zs_init(locations: [NSNumber],
                        colors: [UIColor],
-                       horizontal startPointX: CGFloat = 0,
-                       toX endPointX: CGFloat = 1,
-                       vertical startPointY: CGFloat = 0,
-                       toY endPointY: CGFloat = 1) -> Self {
+                       startPoint: CGPoint,
+                       endPoint: CGPoint) -> Self {
         
-        var _startPointX_ = startPointX > 1 ? 1 : startPointX
-        _startPointX_ = startPointX < 0 ? 0 : startPointX
+        let _startPoint_ = CGPoint(x: CGFloat(fabsf(Float(startPoint.x)) < 1 ? fabsf(Float(startPoint.x)) : 1),
+                                   y: CGFloat(fabsf(Float(startPoint.y)) < 1 ? fabsf(Float(startPoint.y)) : 1))
         
-        var _endPointX_ = endPointX > 1 ? 1 : endPointX
-        _endPointX_ = endPointX < 0 ? 0 : endPointX
+        let _endPoint_ = CGPoint(x: CGFloat(fabsf(Float(endPoint.x)) < 1 ? fabsf(Float(endPoint.x)) : 1),
+                                 y: CGFloat(fabsf(Float(endPoint.y)) < 1 ? fabsf(Float(endPoint.y)) : 1))
         
-        var _startPointY_ = startPointY > 1 ? 1 : startPointY
-        _startPointY_ = startPointY < 0 ? 0 : startPointY
+        let _colors_: [CGColor] = colors.map{ $0.cgColor }
         
-        var _endPointY_ = endPointY > 1 ? 1 : endPointY
-        _endPointY_ = endPointY < 0 ? 0 : endPointY
-        
-        var _colors_: [CGColor] = []
-        for color in colors {
-            _colors_.append(color.cgColor)
-        }
+        let _locations_: [NSNumber] = locations.map{ NSNumber(value: fabsf($0.floatValue) < 1 ? fabsf($0.floatValue) : 1)  }
         
         let gradientLayer = Self()
-        gradientLayer.locations = locations
+        gradientLayer.locations = _locations_
         gradientLayer.colors = _colors_
-        gradientLayer.startPoint = CGPoint(x: _startPointX_, y: _startPointY_)
-        gradientLayer.endPoint = CGPoint(x: _endPointX_, y: _endPointY_)
+        gradientLayer.startPoint = _startPoint_
+        gradientLayer.endPoint = _endPoint_
         return gradientLayer
     }
 }
@@ -92,14 +81,9 @@ import UIKit
         // 设置层的颜色，(前提是要设置层的背景颜色，如果没有设置背景颜色，默认是透明的，再设置这个属性不会有效果。
         replicatorLayer.instanceColor = backgroundColor.cgColor
         
-        var _offsetRed_ = offsetRed > 1 ? 1 : offsetRed
-        _offsetRed_ = offsetRed < -1 ? -1 : offsetRed
-        
-        var _offsetGreen_ = offsetGreen > 1 ? 1 : offsetGreen
-        _offsetGreen_ = offsetGreen < -1 ? -1 : offsetGreen
-        
-        var _offsetBlue_ = offsetBlue > 1 ? 1 : offsetBlue
-        _offsetBlue_ = offsetBlue < -1 ? -1 : offsetBlue
+        let _offsetRed_ = fabsf(offsetRed) > 1 ? 1 : fabsf(offsetRed)
+        let _offsetGreen_ = fabsf(offsetGreen) > 1 ? 1 : fabsf(offsetGreen)
+        let _offsetBlue_ = fabsf(offsetBlue) > 1 ? 1 : fabsf(offsetBlue)
         
         // 颜色的渐变，相对于前一个层的渐变（取值-1~+1）.RGB有三种颜色，所以这里也是绿红蓝三种。
         replicatorLayer.instanceRedOffset = _offsetRed_

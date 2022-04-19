@@ -9,6 +9,7 @@ import UIKit
 
 @objc public extension UIImage {
     
+    /// 修正图片方向
     var zs_fixOrientationImage: UIImage {
 
         guard imageOrientation != .up else { return self }
@@ -53,6 +54,8 @@ import UIKit
         return img
     }
     
+    /// 图片按宽高缩小
+    /// - Parameter newSize: 需要缩小的宽高
     func zs_scaled(_ newSize: CGSize) -> UIImage {
         
         guard newSize != .zero else { return self }
@@ -67,6 +70,8 @@ import UIKit
         return UIImage(cgImage: newImageRef)
     }
     
+    /// 图片进行圆角剪裁
+    /// - Parameter radius: 圆角半径
     func zs_corner(radius: CGFloat) -> UIImage {
         
         let width = size.width * scale
@@ -81,6 +86,8 @@ import UIKit
         return image ?? self
     }
     
+    /// 图片添加遮罩
+    /// - Parameter image: 遮罩图片
     func zs_mask(image: UIImage) -> UIImage {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -94,6 +101,8 @@ import UIKit
         return image ?? self
     }
     
+    /// 将颜色转换为图片
+    /// - Parameter color: 需要转换的颜色
     class func zs_image(color: UIColor) -> UIImage? {
         
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
@@ -106,6 +115,8 @@ import UIKit
         return image
     }
     
+    /// 屏幕截图
+    /// - Parameter view: 需要截取的View
     class func zs_screenShot(view: UIView) -> UIImage? {
         
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)

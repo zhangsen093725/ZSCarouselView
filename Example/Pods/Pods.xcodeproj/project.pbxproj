@@ -7,101 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0164E476F22B21F2AF344AEFF0A0AD56 /* ZSLoadTextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5941AB388BEDD3F0C61349E6F584D4AC /* ZSLoadTextViewManager.swift */; };
-		01CD7F77C8DA8BE209EBC1AB2C8F2705 /* ZSCAAnimationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2D2FD559A3751EE2059B887EFC56E /* ZSCAAnimationUtil.swift */; };
-		01D2356D5E0F8A625746B46038E75929 /* ZSPhoneField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BDF19D0FD80FE65ADA74985A45C4EA /* ZSPhoneField.swift */; };
-		029A3140C1D6F3247376370436F7EA3A /* ZSInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104063CE60F42B3FC1A8E6CDA4DF8C9 /* ZSInputAccessoryView.swift */; };
-		05DA9D51061B3FDC55470F42BAD1BD63 /* ZSShapeLayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B432EB843115C2346192E68EFA13D69 /* ZSShapeLayerUtil.swift */; };
+		01F3C5F0F37FA3E6D5EF2CF59AF41284 /* ZSLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3D87E1AA0A75C7563941EB7B0B980 /* ZSLayout.swift */; };
+		08B35BB7A0242AF794A4CA5C008C777C /* ZSLoadTextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A93ACD214233745BB1A2798A04E4D /* ZSLoadTextViewManager.swift */; };
+		0AE8CDB474D9AC1972BA479B01882E37 /* ZSWaterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF9812484F632913C24850D9E301AB /* ZSWaterFlowLayout.swift */; };
 		0DC716D6A630FAC820D9EA7E6F36EDF4 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC8781BC33B8188D03F4486E8759056 /* Placeholder.swift */; };
-		171CCBDFC1DCD221CDDF8BB1C74F27F3 /* ZSDragStaticShakeViewServe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEEFD64DC9A5C0C93DD54C2A58C3751 /* ZSDragStaticShakeViewServe.swift */; };
+		0E1EE7EF74472B6CA8EF3DDD3B8E3419 /* ZSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B54909FF31567A1A1CE035599A580 /* ZSColor.swift */; };
+		16E923419205CDCFEED8F5E05272621F /* ZSDragStaticItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9834CBA47845554E39951A327B85C210 /* ZSDragStaticItemView.swift */; };
 		1752D57D32B2A424374F07E71625CB91 /* ZSCubeCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0527F0A597894237796A9A35E25ABE5 /* ZSCubeCarouselView.swift */; };
 		17949EA5A648628698D3045C32125D9A /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBE8E4FEA9E540F47C254A0CF05B65F /* FormatIndicatedCacheSerializer.swift */; };
-		189F3B6C95DCEFC20492BBBD81F75497 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		192FA0F532E3E48DE3FAD40E8037078E /* PFMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = F6724BCD0D4B5F178943BBF12EADEF51 /* PFMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ADFC380DA8AD97CBA6F1BB28B580B32 /* ZSLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257AD3CFA3B8612B7D4122B4C3E1BC04 /* ZSLoadView.swift */; };
 		1CE34E976AA15476B01BF07418C3D32F /* PFMatrixTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 67560B4618E7F497B0E8C82932BAD36D /* PFMatrixTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D182C2DB0E3A2FC683C635DA33254CD /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990FF04DDD33D63E7C9DBCB2465084CB /* UIButton+Kingfisher.swift */; };
 		1DD48C4A7AB4FF0690E0FEC4C11BF614 /* PFPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0A7419F4589FA3DB87803F94BBC60B /* PFPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EBA30669C97DFB912AC72D4D9A4011C /* ZSViewUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD8FD3D9E6628BB5A2921394C32CFCC /* ZSViewUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F7D010012D0A868BE076ADEA10C8B53 /* ZSViewUtil.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B0533A13BEED5F83F5F1AD0429A5B /* ZSViewUtil.bundle */; };
 		2141EA483AF5AA88C156A3F8C58E0444 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		218FC76735C2CD3E84F920CE33EDD6FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
-		266149AF9A2962105A64CCBB1D3FD617 /* PFMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E95FFDB1C30B9F8E893ADC82DFF515 /* PFMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		266E3DA56618712ECF7EA606A19DEBD1 /* ZSPlainFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD72F36C1EA842403243AC7106C145 /* ZSPlainFlowLayout.swift */; };
-		266F215379096BF6D2D7CB1F612A87F8 /* ZSDragStaticShakeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41356C95C4A97368C339741FAE6D64 /* ZSDragStaticShakeItemView.swift */; };
 		27B427F4F2C7B3472B55F06404188D82 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC2E6EBCB2054021B271DCB542211 /* ImagePrefetcher.swift */; };
 		28FDC9276EEB4D7EF81271D302CD1D60 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AF2F3B4D1C293ACA2A99E75ABAE9C5 /* Box.swift */; };
 		2AA042B47F5E4F848229C4582AA383C2 /* ZSCarouselView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74170A025C58448755478DF9CC8B61 /* ZSCarouselView-dummy.m */; };
-		2F5AA5FF839883FF6A11E8AE6DDCD773 /* ZSNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D91C9FE62E9BD4E01C1AF2BB78BE3E /* ZSNumberField.swift */; };
+		2CF2B468A2967AEE982A34AD6E2133FC /* ZSPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D0BFC88840E2D5A7CC3F52F12D0EF4 /* ZSPlayerView.swift */; };
+		31D4F884ECAF7AE47C02A37EB717DF93 /* ZSShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB34F93C1DDD1BB783EFEA46B0DA1C1 /* ZSShadowView.swift */; };
 		33E4D49372B55E745B36382B64130122 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B290D3B7C590D5DD4604E23E709871 /* AnimatedImageView.swift */; };
+		363957190BCF2AA3DBFE7F7311795227 /* ZSEditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4254F92CC1B0833A9B47E1FB78BAC26 /* ZSEditTableViewCell.swift */; };
 		39FC1A51FF31905080FDA44316A2E3FA /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 706745B7A0CB61FDC0E898BF1C920189 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C1EABBA442C0149B3CFC0E25481784B /* ZSScrollCarouselCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DE4CD7B0303629ADF9F66099C2447A /* ZSScrollCarouselCustomView.swift */; };
 		3D1AE6DB7D27F191765B76E2B3AEADDD /* ZSSphereCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EAD360BB8A319EDB2FC6811BC9BEA /* ZSSphereCarouselView.swift */; };
+		3F820FCA64D8AD09D64DBED1AF9AC5AA /* ZSInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6DDF82299362574984D725E43C372 /* ZSInputAccessoryView.swift */; };
 		4015497700167E2F7A78FB0FA8728D83 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD88D61FDED5B49A4C6D5D0DF8932AC7 /* ImageView+Kingfisher.swift */; };
 		40B92FDF71624FC72B5AAF014FF827C5 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088C0FEBCC8CE5329B1E52C9523796AB /* String+MD5.swift */; };
-		41A0668A3D25D1D4C73E4B02DFF77A0E /* PFPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C50A0AE4B535F88248DD50F5EA6CD2A2 /* PFPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43A10169AA0EBFAE75733A0E5ABF750C /* ZSSphereView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFCD336A014919464A8C2B14AC556B0 /* ZSSphereView+Layout.swift */; };
 		443C09C19397A4B5599EA6AFC359678D /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AE244D141FD38F7D8B75FE81B2C46 /* ImageModifier.swift */; };
-		471DF96CBA42DC01FD4987397FE3A161 /* ZSLoadViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584CAC69A1F8A8B670F1109DAF36769 /* ZSLoadViewManager.swift */; };
+		46568D41F048358D4CFC91002630D915 /* ZSDragStaticShakeViewServe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71167057CC52FEFED17653A0980214 /* ZSDragStaticShakeViewServe.swift */; };
+		47B3290283F3042AAB02911A0CE8F37E /* ZSLoadViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35521F7DA78248FBB3671E4D77E3BD52 /* ZSLoadViewManager.swift */; };
 		47B8AF353013923F5F69ED8359A8C58B /* ZSScrollCarouselFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DBD0BB77BDAD7EBADD0C9789D3965C /* ZSScrollCarouselFullView.swift */; };
+		5178895CF9A91493728C8F7D38BEE77E /* ZSDragCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B660E7832E789A40B5C6C6B0F7BD36A /* ZSDragCollectionView.swift */; };
+		52494DB7448BF790B190DBE4DD321591 /* ZSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC10E358A39C59738E3794A45B388A0 /* ZSCollectionView.swift */; };
 		53164A2DDB944329FD8720F2F0D45228 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 293DE42AEFFCF928BF2DC31A522687E4 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5548C91B7B13B05D91EE5DAFFB3E8B14 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A5A804261BB8E656F9AD369678088 /* ImageTransition.swift */; };
 		55B73B58EE9E36E4C860A2135A9796A9 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B472C8A20BBA02D0FCF4D10C7EEA5 /* Kingfisher-dummy.m */; };
 		56AAEAC31BF3F7A799AFCCA2E3978DFA /* ZSScrollCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFAA6C5F37D718F50181331339D1309 /* ZSScrollCarouselCell.swift */; };
 		59A62BE2B9F4EE2DB82C1A5705403F51 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082F50C92070014D55B7C81BDAA524E /* ImageProcessor.swift */; };
+		59C00040159DCA58FE934D0BDABE9A31 /* ZSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43978883CA5B51F1F0725B4EFFF0E89 /* ZSTextField.swift */; };
 		5EABE357108BB0AC56B6C7D0AFCC4532 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF992EBEE3A9AF3BFD863CD77BF72B5 /* Indicator.swift */; };
+		5EC3A2EF2AA442885A63AF92B5B40E04 /* ZSViewUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A70A420C40B5702D54B0B8495AB3166 /* ZSViewUtil-dummy.m */; };
 		60F77BAB31FE9A635CFFFE33F7BC7DCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		626CCD3B19CAB7090293FF68A57E610A /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143CF38A20D04A7D2355E522A3609867 /* KingfisherOptionsInfo.swift */; };
-		64A885B1ADA9941D271C00B9C0700ADE /* ZSSphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668E5F0698B921B76D5551CF50AF37C /* ZSSphereView.swift */; };
-		67D2F24B1C6A2B1729EB8AE15DCC7FAE /* ZSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126EA0F5ECE0DF16F58C8F8FE6C39B00 /* ZSImage.swift */; };
+		68B3BDCEECAA9E73DE45EA58F97D99F2 /* ZSIndicatorTextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481F0DBA186490634156885C7946DD6 /* ZSIndicatorTextViewManager.swift */; };
 		6C34744344526A94CB1E6EC5CABDAD61 /* ZSScrollCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACC819B03133E0389C531BC5C7164F /* ZSScrollCarouselView.swift */; };
 		6F0D041B26396A1BA151966897F0F677 /* ZSCarouselView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFBE9EC821E7FD60195606E3357B04E /* ZSCarouselView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7093C66D400FEBFE440C52E2D3ADEAFC /* Pods-ZSCarouselView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4CC2B638CA2AA6DEBB2365482A81A /* Pods-ZSCarouselView_Example-dummy.m */; };
 		70ECB3E5FED2F2D4F6DEFE366519C8AE /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9FEBD9761F826B49497AE9E6AC3D0 /* Resource.swift */; };
-		716D430A71C60F91D4BD412BC445DFAB /* ZSSphereView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C887E427A889F2269BE69F53D6F7004A /* ZSSphereView+Gesture.swift */; };
-		73FF46970C24712D9E5A16586C118891 /* PFAxisDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB1F67E315BAAD2FF537BD369C60978 /* PFAxisDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7939DE5052A3856A6065DED37CF44961 /* ZSSphereView+DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B04EBB202E1133627274D7D98265639 /* ZSSphereView+DisplayLink.swift */; };
-		7A9DF0B22B8E2532D71814402392783D /* PFRadian.h in Headers */ = {isa = PBXBuildFile; fileRef = 90CDD51083508772894C05E42FC541DA /* PFRadian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79C4F528247444653EFF3B28D051CC27 /* ZSDragStaticShakeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3611AF2C7AA49B96A9EACDAB18FA1A5 /* ZSDragStaticShakeItemView.swift */; };
+		7A496DDE6049AD0FF60AED2B926E51B3 /* ZSViewUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A14C460068A597B1929D562A1201C8D9 /* ZSViewUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AE7F7C37F25C84009ECC02029E67294 /* ZSNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA26473E8CC1B5023F0103D9B84132E0 /* ZSNumberField.swift */; };
 		8252B84B1D27BF0C9D8E22E14D0C0C46 /* Pods-ZSCarouselView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD763BF1611FBFCA597A8ADC1974FB7 /* Pods-ZSCarouselView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85FBD338B40D19EFA59BA68724AB9BEB /* PFAxisDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 746992482AB9EDCCDA1BF97E517B0354 /* PFAxisDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87EFAD3D990D1C420E41048AB28A5B7D /* ZSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2F1DE2706E27CB55167A972D3AB352 /* ZSCollectionView.swift */; };
-		8B930CD60FC5C596FE1D770B480943DF /* ZSLayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F3158CCFE2D824F891DF7DCDD2021 /* ZSLayerUtil.swift */; };
+		85FF59D5A5B12496B36BB2470CFAA8B8 /* ZSFocusFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C094D735F8C913DC303D8472449F7 /* ZSFocusFlowLayout.swift */; };
+		867E9398E13468A13805D0A2B87FB6E7 /* ZSDragCollectionViewServe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92D3D5AA8AF989008EE525BD3DC3A /* ZSDragCollectionViewServe.swift */; };
+		88122F2D5259DFAC9D5DC0D0A010DA3C /* ZSFixedSpecingFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185BB90D452FF0BF9562BCD183157C21 /* ZSFixedSpecingFlowLayout.swift */; };
+		89F82C1015D4BAC234BAAEF2A96D7AE2 /* ZSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA776166FA6BC1BBCCAB783391FDBB0A /* ZSButton.swift */; };
 		8DFF97B7553BE6F226FF52618D9DA79F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
-		9096DC220363A871BDA25612416331AA /* ZSFocusFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF4A9A2D6F34279AE938CC27C01C3B /* ZSFocusFlowLayout.swift */; };
 		91509C90DEDCAD060771637DA81DC004 /* Pods-ZSCarouselView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F96DDA990E75674D51988EF6CD733C50 /* Pods-ZSCarouselView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91A279E89091C7CFD8715EF32AF9552E /* Pods-ZSCarouselView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDB20FD87BD45141167CE34C786B3BC /* Pods-ZSCarouselView_Tests-dummy.m */; };
-		9B2A12EFD838C04FFBDC8D22C3B89AC3 /* ZSLoadTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EAB57E4EAB98F2583F3D80188E5AE7 /* ZSLoadTextView.swift */; };
-		A1AC38839726990FEF9BAFA69ED6262A /* ZSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAEA77FAA89ED3104CA82094C1B5AEE /* ZSButton.swift */; };
-		A1CB1D2A157F4DD03B098C79FB5189F6 /* ZSDragCollectionViewServe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5469D33DA33C3CE2BAE38997505880 /* ZSDragCollectionViewServe.swift */; };
+		9EC34C56CAC02DBFF217D3D6828644FF /* ZSPhoneField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C62EB6F2790A498588A7020AE986F3 /* ZSPhoneField.swift */; };
+		9F0971D384E22ECA9CA14AB97D928516 /* ZSPlainFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E34EAE9B07F68A90D4F4216E841A85D /* ZSPlainFlowLayout.swift */; };
 		A317E632C48B5D4A15D0CBD1E5499430 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083915ED76C3B25B1FB82A9066373D6E /* ImageCache.swift */; };
+		A3742B6A57F5995631BCC7EE393102F8 /* ZSWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9250FDA5E3BE8D9A6B023B34694E87D /* ZSWebView.swift */; };
 		A4420637EE415057C5BA22ABE5A984F9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2D524853830457ABD8CDFFCF1C49 /* Image.swift */; };
 		A5C6C6AF307753F62CB842B879E50CB2 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E224E1C733A8992C91D107DDB4906877 /* Kingfisher.swift */; };
-		AB11FBA9ADF772246999B9E366C4BED8 /* ZSWindowTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC832A8EA0E2A7913E5F9EF3F823024 /* ZSWindowTranslate.swift */; };
 		AB896E86184C7E4C1B132A6FD48C945F /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E84B8B3AF745773E8DAF6CB70ACFB2 /* ThreadHelper.swift */; };
 		ABD0719C83EB34C533393B6826E69BC9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
-		ACE7E874D12D1B5474B5018F7E8C2134 /* ZSIndicatorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B87AF298C959BA98FCCB7A01ADF685 /* ZSIndicatorTextView.swift */; };
 		B040C5F2A293B5DF11318C1562517B02 /* ZSSphereCarouselView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB01524E610452A6C237FFBC3C868098 /* ZSSphereCarouselView+Layout.swift */; };
-		B07EC1999BCE4EDEE62AF3552C486224 /* ZSWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BC938F26E94FA18D271162BC16FED /* ZSWebView.swift */; };
+		B7CFE0C89F672FD16C225A024F436D87 /* ZSShapeLayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD581C0F30B8E93B5A1556C2352AF0F7 /* ZSShapeLayerUtil.swift */; };
 		B7F559ABF7622040866557F0C6F422C3 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF649A28794EEA457CD6C819D349E /* RequestModifier.swift */; };
+		BC31DC480EB7F032274BE8F79ECC9702 /* ZSPreview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451D0A15B64BD46FD67CAFFF43D72668 /* ZSPreview.xcassets */; };
 		C08A09B0CEBC18AD963AAFB1778A9848 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B024F235E83889E3316770283677D24 /* KingfisherManager.swift */; };
-		C2CB7ECC8FC9C5D1120CDDC772A243BB /* ZSViewUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 372FD0D1ED3784B7AC950BBD2AF3300B /* ZSViewUtil-dummy.m */; };
-		C6446820D2822674664E76060FECD237 /* ZSViewUtil.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B0533A13BEED5F83F5F1AD0429A5B /* ZSViewUtil.bundle */; };
-		C658F254024DDF4FF9A1F054F1E77F95 /* ZSLoadView+DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96554D378C317900B1B68C9864D2BCCC /* ZSLoadView+DisplayLink.swift */; };
+		C123EE5F53E1CCB45D8017A4229C985A /* ZSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F3860AE2387E6E40490B93DCCA094E /* ZSImage.swift */; };
 		C79D4F0D0C79942AAD2B4F16D0766095 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0110418C10897B6C7B6CA47EFAECA8 /* CacheSerializer.swift */; };
 		C9D61F43F4CBE9CDB7D4C5C33AC1F6B7 /* PFRadian.h in Headers */ = {isa = PBXBuildFile; fileRef = 9662B15E901DD459875785C34F234C43 /* PFRadian.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAC852725E32F2D943F69712B6F2FB8A /* ZSDragStaticCollectionServe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1C801F06305E3C6EDFB7ABD4575737 /* ZSDragStaticCollectionServe.swift */; };
-		CBAA53A4816D5210C0B9303B9D591EEF /* ZSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C73F3D5A731C104EC0BFB9C49E470 /* ZSTextField.swift */; };
-		CC3DDFF3B44DA4D7F5C665FCB7EAB2DB /* ZSUIBaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC465574DC02C52011E1B611DADC0D17 /* ZSUIBaseUtil.swift */; };
 		CD92E3C8B2B53B5545D1B0394881A1EB /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1709EE2FFC76787C09184C4980D5F54E /* ImageDownloader.swift */; };
-		CD9BE48F2113448DBDCDD40EA6D8882A /* ZSLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621A234EA78C865BD43F6F47E814A2B /* ZSLoadView.swift */; };
-		CE43FD75B047F34D13E14CB088F2E240 /* ZSProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DD6825DFE573496D6BCAFF5CB4547B /* ZSProfile.swift */; };
-		D04ADB29398584848A08E44230472273 /* PFMatrixTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BADFD3215B12DB7A071FDDB032FFC9E /* PFMatrixTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D22D94EA0723C9F16C48347B22CBB121 /* ZSPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CFB1EC5C3596656FB9C38873897F2C /* ZSPlayerView.swift */; };
-		D330B4D1BED3DAB08797BFD010D97806 /* ZSDragCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AE4B7FDCA7DA3B1B76DDD98B2EF81 /* ZSDragCollectionView.swift */; };
-		D6F50F6802AC1C7314BB2978EA904F52 /* ZSToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F402B6D9F734A8D268110C09F1B5DC0 /* ZSToastView.swift */; };
+		D0CD394A8EFD4944BE7453BBC3DB3F17 /* ZSLayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71632C9D560CC8490DD086B28918129E /* ZSLayerUtil.swift */; };
+		D3991ABB630554D7E370884F38533B44 /* ZSIndicatorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D737980B7073C8380946C76A9492BFF /* ZSIndicatorTextView.swift */; };
+		D48D89F28C18FB7648BC048E32139CAD /* ZSLoadTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B24FE35C22300A4916158DF1571AF6 /* ZSLoadTextView.swift */; };
+		DE636F38F889345AD1811B317F03EA2A /* ZSWebJSUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626195A3D965795AB5DB7CC3B86887BE /* ZSWebJSUtil.swift */; };
 		DFF6E3A230B831C270B76CD6A958228E /* ZSSphereCarouselView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0B86F1F57B0BE3A33BAC918491E19 /* ZSSphereCarouselView+Gesture.swift */; };
-		EC5A6C0573D1394B45F1748CD4358148 /* ZSPreview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558AA02D742CE69B4A8760804B151F5A /* ZSPreview.xcassets */; };
-		ECC8678CE81FC9439EC065B1751DCE1A /* ZSDragStaticItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79749A4E30112C7A175893097054469 /* ZSDragStaticItemView.swift */; };
-		EF5E5E314D72BDA75E87BD440D15A926 /* ZSWebJSUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F5266A422E9846326DEC4DA5FACD1 /* ZSWebJSUtil.swift */; };
-		F70BACC3D0F63FEAAD08176B94AED53E /* ZSIndicatorTextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC0AD4D4A4B7EDC2413B0B20824B77 /* ZSIndicatorTextViewManager.swift */; };
+		E5B276A84C75F2CA3C1C177CDD4E5986 /* ZSCAAnimationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8830697925E35B6876394A5F0DC43EFB /* ZSCAAnimationUtil.swift */; };
+		E760219E59C09AE64A8F8A9EE790B783 /* ZSUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0A0D8CEAFE1AF30F06600DBF30AF47 /* ZSUIExtension.swift */; };
+		ECD7B08511717C0DDED81C285F88F9CB /* ZSDragStaticCollectionServe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFFCEEF461D8D884A0DC8CD1B7EFDA6 /* ZSDragStaticCollectionServe.swift */; };
+		EDD8C413FD1BE68A6E7F3DCB412A9CBC /* ZSToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5534E3B1018341C859B9CC31A1B2D1 /* ZSToastView.swift */; };
+		F5179ED4E3CCB29798A4E8EE813794E9 /* ZSWindowTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32AC42502DB6C68BA157A45B099081 /* ZSWindowTranslate.swift */; };
+		F6A60FEB7EA1375A5E35944AC757ED16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		F979FA9F9F7952921063534E6A2610EF /* ZSLoadView+DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7CDBB99C595F1094932942C3BEA1B5 /* ZSLoadView+DisplayLink.swift */; };
 		F9BC0BCD165A3FCA8636CE51007A28A2 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CBAB5F9BC16ED3FE833C9641AA30B /* Filter.swift */; };
 		FFD7C0BD9F57DC76F5A4AAEBD09F11F9 /* ZSSphereCarouselView+DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F8909D24DD1910CF421CB82A6FB1C /* ZSSphereCarouselView+DisplayLink.swift */; };
 /* End PBXBuildFile section */
@@ -113,6 +109,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 18B32A085DD309FBA7B55E245F27DC03;
 			remoteInfo = ZSCarouselView;
+		};
+		1DC2AD2A12D5114273B2276D144F19B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08D02C3F431726771B683F343764765B;
+			remoteInfo = "ZSViewUtil-ZSViewUtil";
 		};
 		8CC5E6B0EE094B74BB44861019507DC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -128,13 +131,6 @@
 			remoteGlobalIDString = E8022D22FAA6690B5E1C379C1BCE1491;
 			remoteInfo = Kingfisher;
 		};
-		A7D767A9153134C2F16E7F8BE6800AB0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08D02C3F431726771B683F343764765B;
-			remoteInfo = "ZSViewUtil-ZSViewUtil";
-		};
 		D705A0B059675CD5DA3275A446BDDEEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -146,139 +142,150 @@
 
 /* Begin PBXFileReference section */
 		015E29189F5BE415EE3A9F8CFC4FD666 /* Pods-ZSCarouselView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZSCarouselView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0299A6FE12EF2235000D323615874D16 /* ZSViewUtil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSViewUtil.debug.xcconfig; sourceTree = "<group>"; };
 		066A5A804261BB8E656F9AD369678088 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
-		073E029704679E6896800C038828B9C1 /* ZSViewUtil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSViewUtil.release.xcconfig; sourceTree = "<group>"; };
 		083915ED76C3B25B1FB82A9066373D6E /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
 		088C0FEBCC8CE5329B1E52C9523796AB /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
 		09FAC2E6EBCB2054021B271DCB542211 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
-		0B432EB843115C2346192E68EFA13D69 /* ZSShapeLayerUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSShapeLayerUtil.swift; path = ZSViewUtil/Classes/Layer/ZSShapeLayerUtil.swift; sourceTree = "<group>"; };
-		0CAEA77FAA89ED3104CA82094C1B5AEE /* ZSButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSButton.swift; path = ZSViewUtil/Classes/Button/ZSButton.swift; sourceTree = "<group>"; };
+		0A70A420C40B5702D54B0B8495AB3166 /* ZSViewUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZSViewUtil-dummy.m"; sourceTree = "<group>"; };
 		0E1AE244D141FD38F7D8B75FE81B2C46 /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/ImageModifier.swift; sourceTree = "<group>"; };
-		0FCF4A9A2D6F34279AE938CC27C01C3B /* ZSFocusFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSFocusFlowLayout.swift; path = ZSViewUtil/Classes/CollectionView/FlowLayout/ZSFocusFlowLayout.swift; sourceTree = "<group>"; };
-		11DD6825DFE573496D6BCAFF5CB4547B /* ZSProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSProfile.swift; path = ZSViewUtil/Classes/Profiles/ZSProfile.swift; sourceTree = "<group>"; };
-		126EA0F5ECE0DF16F58C8F8FE6C39B00 /* ZSImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSImage.swift; path = ZSViewUtil/Classes/Image/ZSImage.swift; sourceTree = "<group>"; };
+		118A93ACD214233745BB1A2798A04E4D /* ZSLoadTextViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLoadTextViewManager.swift; path = ZSViewUtil/Classes/Toast/Load/ZSLoadTextViewManager.swift; sourceTree = "<group>"; };
 		143CF38A20D04A7D2355E522A3609867 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
 		1709EE2FFC76787C09184C4980D5F54E /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
+		185BB90D452FF0BF9562BCD183157C21 /* ZSFixedSpecingFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSFixedSpecingFlowLayout.swift; path = ZSViewUtil/Classes/CollectionView/FlowLayout/ZSFixedSpecingFlowLayout.swift; sourceTree = "<group>"; };
 		19B8AB91C0360BBD308F00DBBD79C20B /* Pods-ZSCarouselView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZSCarouselView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		19D0BFC88840E2D5A7CC3F52F12D0EF4 /* ZSPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSPlayerView.swift; path = ZSViewUtil/Classes/Player/ZSPlayerView.swift; sourceTree = "<group>"; };
 		1AC8781BC33B8188D03F4486E8759056 /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Placeholder.swift; sourceTree = "<group>"; };
 		1B024F235E83889E3316770283677D24 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
 		1B5B0533A13BEED5F83F5F1AD0429A5B /* ZSViewUtil.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ZSViewUtil.bundle; path = "ZSViewUtil-ZSViewUtil.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEEFD64DC9A5C0C93DD54C2A58C3751 /* ZSDragStaticShakeViewServe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragStaticShakeViewServe.swift; path = ZSViewUtil/Classes/DragView/Static/Shake/ZSDragStaticShakeViewServe.swift; sourceTree = "<group>"; };
+		1D737980B7073C8380946C76A9492BFF /* ZSIndicatorTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSIndicatorTextView.swift; path = ZSViewUtil/Classes/Toast/Load/ZSIndicatorTextView.swift; sourceTree = "<group>"; };
 		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		241496A76BA574A2532FECE0E2B4C926 /* Kingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.release.xcconfig; sourceTree = "<group>"; };
+		257AD3CFA3B8612B7D4122B4C3E1BC04 /* ZSLoadView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLoadView.swift; path = ZSViewUtil/Classes/Toast/Load/ZSLoadView.swift; sourceTree = "<group>"; };
+		26C62EB6F2790A498588A7020AE986F3 /* ZSPhoneField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSPhoneField.swift; path = ZSViewUtil/Classes/Field/ZSPhoneField.swift; sourceTree = "<group>"; };
 		26EC189102282BC7B93955F245202531 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		281D2D524853830457ABD8CDFFCF1C49 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
 		293DE42AEFFCF928BF2DC31A522687E4 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		2B5F8909D24DD1910CF421CB82A6FB1C /* ZSSphereCarouselView+DisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSSphereCarouselView+DisplayLink.swift"; sourceTree = "<group>"; };
+		2B660E7832E789A40B5C6C6B0F7BD36A /* ZSDragCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragCollectionView.swift; path = ZSViewUtil/Classes/DragView/ZSDragCollectionView.swift; sourceTree = "<group>"; };
 		2F3E739A1AC2F85DD4E44D6879968FB0 /* Kingfisher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kingfisher-Info.plist"; sourceTree = "<group>"; };
 		2F96F777119010F75000612B83C0B603 /* Kingfisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.debug.xcconfig; sourceTree = "<group>"; };
 		2FFA3D5A7527F4E1666DB5E18615EA83 /* Pods-ZSCarouselView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZSCarouselView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3023907155AC92CFE93C7C399DB46211 /* Pods-ZSCarouselView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZSCarouselView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3621A234EA78C865BD43F6F47E814A2B /* ZSLoadView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLoadView.swift; path = ZSViewUtil/Classes/Toast/Load/ZSLoadView.swift; sourceTree = "<group>"; };
-		372FD0D1ED3784B7AC950BBD2AF3300B /* ZSViewUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZSViewUtil-dummy.m"; sourceTree = "<group>"; };
+		35521F7DA78248FBB3671E4D77E3BD52 /* ZSLoadViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLoadViewManager.swift; path = ZSViewUtil/Classes/Toast/Load/ZSLoadViewManager.swift; sourceTree = "<group>"; };
 		3B91FCA200194D69A41A446983928366 /* Pods-ZSCarouselView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZSCarouselView_Tests-Info.plist"; sourceTree = "<group>"; };
 		3BD763BF1611FBFCA597A8ADC1974FB7 /* Pods-ZSCarouselView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZSCarouselView_Example-umbrella.h"; sourceTree = "<group>"; };
 		3EA38203ABA03258AD7461DD78F10486 /* ZSCarouselView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZSCarouselView.framework; path = ZSCarouselView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF9FEBD9761F826B49497AE9E6AC3D0 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
-		449F5266A422E9846326DEC4DA5FACD1 /* ZSWebJSUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSWebJSUtil.swift; path = ZSViewUtil/Classes/WebView/ZSWebJSUtil.swift; sourceTree = "<group>"; };
+		40A058E16F910A699BC29C204AC6AA05 /* ResourceBundle-ZSViewUtil-ZSViewUtil-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZSViewUtil-ZSViewUtil-Info.plist"; sourceTree = "<group>"; };
+		451D0A15B64BD46FD67CAFFF43D72668 /* ZSPreview.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ZSPreview.xcassets; path = ZSViewUtil/Assets/ZSPreview.xcassets; sourceTree = "<group>"; };
 		4AFBE9EC821E7FD60195606E3357B04E /* ZSCarouselView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSCarouselView-umbrella.h"; sourceTree = "<group>"; };
-		4C6C73F3D5A731C104EC0BFB9C49E470 /* ZSTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSTextField.swift; path = ZSViewUtil/Classes/Field/ZSTextField.swift; sourceTree = "<group>"; };
-		4E0AE4B7FDCA7DA3B1B76DDD98B2EF81 /* ZSDragCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragCollectionView.swift; path = ZSViewUtil/Classes/DragView/ZSDragCollectionView.swift; sourceTree = "<group>"; };
-		4ECC0AD4D4A4B7EDC2413B0B20824B77 /* ZSIndicatorTextViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSIndicatorTextViewManager.swift; path = ZSViewUtil/Classes/Toast/Load/ZSIndicatorTextViewManager.swift; sourceTree = "<group>"; };
+		4D56ACB6144C4411D89120FE7078EB83 /* ZSViewUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSViewUtil-prefix.pch"; sourceTree = "<group>"; };
+		4D71167057CC52FEFED17653A0980214 /* ZSDragStaticShakeViewServe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragStaticShakeViewServe.swift; path = ZSViewUtil/Classes/DragView/Static/Shake/ZSDragStaticShakeViewServe.swift; sourceTree = "<group>"; };
 		4F2AF649A28794EEA457CD6C819D349E /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
 		50F325F349E5752864F6CC5AB6D5BA58 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		558AA02D742CE69B4A8760804B151F5A /* ZSPreview.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ZSPreview.xcassets; path = ZSViewUtil/Assets/ZSPreview.xcassets; sourceTree = "<group>"; };
+		52B24FE35C22300A4916158DF1571AF6 /* ZSLoadTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLoadTextView.swift; path = ZSViewUtil/Classes/Toast/Load/ZSLoadTextView.swift; sourceTree = "<group>"; };
 		579CBAB5F9BC16ED3FE833C9641AA30B /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
-		5941AB388BEDD3F0C61349E6F584D4AC /* ZSLoadTextViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLoadTextViewManager.swift; path = ZSViewUtil/Classes/Toast/Load/ZSLoadTextViewManager.swift; sourceTree = "<group>"; };
-		5A1C801F06305E3C6EDFB7ABD4575737 /* ZSDragStaticCollectionServe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragStaticCollectionServe.swift; path = ZSViewUtil/Classes/DragView/Static/ZSDragStaticCollectionServe.swift; sourceTree = "<group>"; };
 		5AE97F0A2973F2119E275AE9802B4CE5 /* Pods-ZSCarouselView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZSCarouselView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5BF992EBEE3A9AF3BFD863CD77BF72B5 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
+		5E32AC42502DB6C68BA157A45B099081 /* ZSWindowTranslate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSWindowTranslate.swift; path = ZSViewUtil/Classes/ViewAnimation/ZSWindowTranslate.swift; sourceTree = "<group>"; };
+		5EE3D87E1AA0A75C7563941EB7B0B980 /* ZSLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLayout.swift; path = ZSViewUtil/Classes/Layout/ZSLayout.swift; sourceTree = "<group>"; };
+		5EFFCEEF461D8D884A0DC8CD1B7EFDA6 /* ZSDragStaticCollectionServe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragStaticCollectionServe.swift; path = ZSViewUtil/Classes/DragView/Static/ZSDragStaticCollectionServe.swift; sourceTree = "<group>"; };
 		5FBE8E4FEA9E540F47C254A0CF05B65F /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
 		62530C1D8791CEBCD1FA65354A9A1AAF /* Pods-ZSCarouselView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZSCarouselView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		626195A3D965795AB5DB7CC3B86887BE /* ZSWebJSUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSWebJSUtil.swift; path = ZSViewUtil/Classes/WebView/ZSWebJSUtil.swift; sourceTree = "<group>"; };
 		632423E948CD7FB7E5BAE23B9CB55E75 /* ZSCarouselView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZSCarouselView.modulemap; sourceTree = "<group>"; };
+		647FF61302F395A4F8475A580854270F /* ZSViewUtil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSViewUtil.debug.xcconfig; sourceTree = "<group>"; };
 		6595C4D54A3C74804FAB1C7E78E5FF21 /* Pods-ZSCarouselView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZSCarouselView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		67560B4618E7F497B0E8C82932BAD36D /* PFMatrixTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFMatrixTransform.h; sourceTree = "<group>"; };
 		6AACC819B03133E0389C531BC5C7164F /* ZSScrollCarouselView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSScrollCarouselView.swift; path = ZSCarouselView/Classes/ZSScrollCarouselView.swift; sourceTree = "<group>"; };
-		6B04EBB202E1133627274D7D98265639 /* ZSSphereView+DisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZSSphereView+DisplayLink.swift"; path = "ZSViewUtil/Classes/SphereView/ZSSphereView+DisplayLink.swift"; sourceTree = "<group>"; };
 		6D0110418C10897B6C7B6CA47EFAECA8 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
+		6F7CDBB99C595F1094932942C3BEA1B5 /* ZSLoadView+DisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZSLoadView+DisplayLink.swift"; path = "ZSViewUtil/Classes/Toast/Load/ZSLoadView+DisplayLink.swift"; sourceTree = "<group>"; };
 		706745B7A0CB61FDC0E898BF1C920189 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
+		71632C9D560CC8490DD086B28918129E /* ZSLayerUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLayerUtil.swift; path = ZSViewUtil/Classes/Layer/ZSLayerUtil.swift; sourceTree = "<group>"; };
 		746992482AB9EDCCDA1BF97E517B0354 /* PFAxisDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFAxisDirection.h; sourceTree = "<group>"; };
-		7668E5F0698B921B76D5551CF50AF37C /* ZSSphereView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSSphereView.swift; path = ZSViewUtil/Classes/SphereView/ZSSphereView.swift; sourceTree = "<group>"; };
+		752E6AEB53F87E6EBB87EFCB2B73C89C /* ZSViewUtil-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZSViewUtil-Info.plist"; sourceTree = "<group>"; };
 		78B4CC2B638CA2AA6DEBB2365482A81A /* Pods-ZSCarouselView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZSCarouselView_Example-dummy.m"; sourceTree = "<group>"; };
-		7C41356C95C4A97368C339741FAE6D64 /* ZSDragStaticShakeItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragStaticShakeItemView.swift; path = ZSViewUtil/Classes/DragView/Static/Shake/ZSDragStaticShakeItemView.swift; sourceTree = "<group>"; };
 		7F3B7B63965B898634AE466FC91C093B /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kingfisher.modulemap; sourceTree = "<group>"; };
-		80F93A825D102CBADE7769F85C76A78C /* ZSViewUtil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZSViewUtil.modulemap; sourceTree = "<group>"; };
-		82AD72F36C1EA842403243AC7106C145 /* ZSPlainFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSPlainFlowLayout.swift; path = ZSViewUtil/Classes/CollectionView/FlowLayout/ZSPlainFlowLayout.swift; sourceTree = "<group>"; };
-		83E95FFDB1C30B9F8E893ADC82DFF515 /* PFMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFMatrix.h; path = ZSViewUtil/Classes/SphereView/PFObjc/PFMatrix.h; sourceTree = "<group>"; };
-		8AA2D2FD559A3751EE2059B887EFC56E /* ZSCAAnimationUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSCAAnimationUtil.swift; path = ZSViewUtil/Classes/ViewAnimation/ZSCAAnimationUtil.swift; sourceTree = "<group>"; };
+		8481F0DBA186490634156885C7946DD6 /* ZSIndicatorTextViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSIndicatorTextViewManager.swift; path = ZSViewUtil/Classes/Toast/Load/ZSIndicatorTextViewManager.swift; sourceTree = "<group>"; };
+		8830697925E35B6876394A5F0DC43EFB /* ZSCAAnimationUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSCAAnimationUtil.swift; path = ZSViewUtil/Classes/ViewAnimation/ZSCAAnimationUtil.swift; sourceTree = "<group>"; };
 		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		8BADFD3215B12DB7A071FDDB032FFC9E /* PFMatrixTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFMatrixTransform.h; path = ZSViewUtil/Classes/SphereView/PFObjc/PFMatrixTransform.h; sourceTree = "<group>"; };
+		8C5534E3B1018341C859B9CC31A1B2D1 /* ZSToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSToastView.swift; path = ZSViewUtil/Classes/Toast/Toast/ZSToastView.swift; sourceTree = "<group>"; };
 		8D74170A025C58448755478DF9CC8B61 /* ZSCarouselView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZSCarouselView-dummy.m"; sourceTree = "<group>"; };
-		8F402B6D9F734A8D268110C09F1B5DC0 /* ZSToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSToastView.swift; path = ZSViewUtil/Classes/Toast/Toast/ZSToastView.swift; sourceTree = "<group>"; };
+		8E34EAE9B07F68A90D4F4216E841A85D /* ZSPlainFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSPlainFlowLayout.swift; path = ZSViewUtil/Classes/CollectionView/FlowLayout/ZSPlainFlowLayout.swift; sourceTree = "<group>"; };
 		9082F50C92070014D55B7C81BDAA524E /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
 		90B290D3B7C590D5DD4604E23E709871 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
-		90CDD51083508772894C05E42FC541DA /* PFRadian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRadian.h; path = ZSViewUtil/Classes/SphereView/PFObjc/PFRadian.h; sourceTree = "<group>"; };
-		93EAB57E4EAB98F2583F3D80188E5AE7 /* ZSLoadTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLoadTextView.swift; path = ZSViewUtil/Classes/Toast/Load/ZSLoadTextView.swift; sourceTree = "<group>"; };
 		9403FACC3866EEFAA8999A241F8DC668 /* ZSCarouselView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZSCarouselView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94B16B23D78904E39E4D267B21C9642D /* ZSViewUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSViewUtil-prefix.pch"; sourceTree = "<group>"; };
-		9584CAC69A1F8A8B670F1109DAF36769 /* ZSLoadViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLoadViewManager.swift; path = ZSViewUtil/Classes/Toast/Load/ZSLoadViewManager.swift; sourceTree = "<group>"; };
-		96554D378C317900B1B68C9864D2BCCC /* ZSLoadView+DisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZSLoadView+DisplayLink.swift"; path = "ZSViewUtil/Classes/Toast/Load/ZSLoadView+DisplayLink.swift"; sourceTree = "<group>"; };
 		9662B15E901DD459875785C34F234C43 /* PFRadian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFRadian.h; sourceTree = "<group>"; };
+		96F92D3D5AA8AF989008EE525BD3DC3A /* ZSDragCollectionViewServe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragCollectionViewServe.swift; path = ZSViewUtil/Classes/DragView/Scroll/ZSDragCollectionViewServe.swift; sourceTree = "<group>"; };
+		9834CBA47845554E39951A327B85C210 /* ZSDragStaticItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragStaticItemView.swift; path = ZSViewUtil/Classes/DragView/Static/ZSDragStaticItemView.swift; sourceTree = "<group>"; };
 		990FF04DDD33D63E7C9DBCB2465084CB /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		9C246001FF9FDCE22B67DB2A44325A6B /* ZSCarouselView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSCarouselView.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A14C460068A597B1929D562A1201C8D9 /* ZSViewUtil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSViewUtil-umbrella.h"; sourceTree = "<group>"; };
+		A70E7AF6EECFFCEB423052C9C14E1135 /* ZSViewUtil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSViewUtil.release.xcconfig; sourceTree = "<group>"; };
 		A8DE4CD7B0303629ADF9F66099C2447A /* ZSScrollCarouselCustomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSScrollCarouselCustomView.swift; path = ZSCarouselView/Classes/ZSScrollCarouselCustomView.swift; sourceTree = "<group>"; };
-		AA5F3158CCFE2D824F891DF7DCDD2021 /* ZSLayerUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSLayerUtil.swift; path = ZSViewUtil/Classes/Layer/ZSLayerUtil.swift; sourceTree = "<group>"; };
-		B0035C74F726E0C02F1FFE23FFDD88D0 /* ZSViewUtil-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZSViewUtil-Info.plist"; sourceTree = "<group>"; };
+		AB0A0D8CEAFE1AF30F06600DBF30AF47 /* ZSUIExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSUIExtension.swift; path = ZSViewUtil/Classes/Extension/ZSUIExtension.swift; sourceTree = "<group>"; };
 		B0527F0A597894237796A9A35E25ABE5 /* ZSCubeCarouselView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSCubeCarouselView.swift; path = ZSCarouselView/Classes/ZSCubeCarouselView.swift; sourceTree = "<group>"; };
 		B1E84B8B3AF745773E8DAF6CB70ACFB2 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
 		B2E16DD8B9DB9FDFA43AC60B1AAAFB5C /* ZSCarouselView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSCarouselView-prefix.pch"; sourceTree = "<group>"; };
+		B3AC96261E3AAD2AB748543684E57D62 /* ZSViewUtil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZSViewUtil.modulemap; sourceTree = "<group>"; };
+		B40B54909FF31567A1A1CE035599A580 /* ZSColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSColor.swift; path = ZSViewUtil/Classes/Extension/ZSColor.swift; sourceTree = "<group>"; };
 		B58B472C8A20BBA02D0FCF4D10C7EEA5 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
-		B82441657DD82276F46E28D971E1D9BC /* ResourceBundle-ZSViewUtil-ZSViewUtil-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ZSViewUtil-ZSViewUtil-Info.plist"; sourceTree = "<group>"; };
-		BCC832A8EA0E2A7913E5F9EF3F823024 /* ZSWindowTranslate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSWindowTranslate.swift; path = ZSViewUtil/Classes/ViewAnimation/ZSWindowTranslate.swift; sourceTree = "<group>"; };
+		BA776166FA6BC1BBCCAB783391FDBB0A /* ZSButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSButton.swift; path = ZSViewUtil/Classes/Button/ZSButton.swift; sourceTree = "<group>"; };
 		BD0CBF4B625BFECEAE618D9DF96E69FC /* ZSCarouselView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSCarouselView.release.xcconfig; sourceTree = "<group>"; };
 		BD88D61FDED5B49A4C6D5D0DF8932AC7 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		C12E870C6A9DC9DD77D755D5778B6797 /* Pods-ZSCarouselView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZSCarouselView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C346E4F8FA78C33976CF96EAFC596BC8 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		C3611AF2C7AA49B96A9EACDAB18FA1A5 /* ZSDragStaticShakeItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragStaticShakeItemView.swift; path = ZSViewUtil/Classes/DragView/Static/Shake/ZSDragStaticShakeItemView.swift; sourceTree = "<group>"; };
 		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C50A0AE4B535F88248DD50F5EA6CD2A2 /* PFPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPoint.h; path = ZSViewUtil/Classes/SphereView/PFObjc/PFPoint.h; sourceTree = "<group>"; };
-		C5BDF19D0FD80FE65ADA74985A45C4EA /* ZSPhoneField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSPhoneField.swift; path = ZSViewUtil/Classes/Field/ZSPhoneField.swift; sourceTree = "<group>"; };
-		C79749A4E30112C7A175893097054469 /* ZSDragStaticItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragStaticItemView.swift; path = ZSViewUtil/Classes/DragView/Static/ZSDragStaticItemView.swift; sourceTree = "<group>"; };
-		C887E427A889F2269BE69F53D6F7004A /* ZSSphereView+Gesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZSSphereView+Gesture.swift"; path = "ZSViewUtil/Classes/SphereView/ZSSphereView+Gesture.swift"; sourceTree = "<group>"; };
+		C4254F92CC1B0833A9B47E1FB78BAC26 /* ZSEditTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSEditTableViewCell.swift; path = ZSViewUtil/Classes/TableView/Cell/ZSEditTableViewCell.swift; sourceTree = "<group>"; };
+		C9250FDA5E3BE8D9A6B023B34694E87D /* ZSWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSWebView.swift; path = ZSViewUtil/Classes/WebView/ZSWebView.swift; sourceTree = "<group>"; };
+		CA26473E8CC1B5023F0103D9B84132E0 /* ZSNumberField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSNumberField.swift; path = ZSViewUtil/Classes/Field/ZSNumberField.swift; sourceTree = "<group>"; };
 		CAF0B86F1F57B0BE3A33BAC918491E19 /* ZSSphereCarouselView+Gesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSSphereCarouselView+Gesture.swift"; sourceTree = "<group>"; };
-		CAFCD336A014919464A8C2B14AC556B0 /* ZSSphereView+Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ZSSphereView+Layout.swift"; path = "ZSViewUtil/Classes/SphereView/ZSSphereView+Layout.swift"; sourceTree = "<group>"; };
 		CC2E309FC201CB29E716506D47457B0B /* Pods-ZSCarouselView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZSCarouselView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CC5469D33DA33C3CE2BAE38997505880 /* ZSDragCollectionViewServe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSDragCollectionViewServe.swift; path = ZSViewUtil/Classes/DragView/Scroll/ZSDragCollectionViewServe.swift; sourceTree = "<group>"; };
 		CCFAA6C5F37D718F50181331339D1309 /* ZSScrollCarouselCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSScrollCarouselCell.swift; path = ZSCarouselView/Classes/ZSScrollCarouselCell.swift; sourceTree = "<group>"; };
-		CDD8FD3D9E6628BB5A2921394C32CFCC /* ZSViewUtil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSViewUtil-umbrella.h"; sourceTree = "<group>"; };
 		CFDB20FD87BD45141167CE34C786B3BC /* Pods-ZSCarouselView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZSCarouselView_Tests-dummy.m"; sourceTree = "<group>"; };
 		D09F07E2ABC69C07DACA082B11889597 /* Pods-ZSCarouselView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZSCarouselView_Example-Info.plist"; sourceTree = "<group>"; };
-		D2D91C9FE62E9BD4E01C1AF2BB78BE3E /* ZSNumberField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSNumberField.swift; path = ZSViewUtil/Classes/Field/ZSNumberField.swift; sourceTree = "<group>"; };
-		D5CFB1EC5C3596656FB9C38873897F2C /* ZSPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSPlayerView.swift; path = ZSViewUtil/Classes/Player/ZSPlayerView.swift; sourceTree = "<group>"; };
-		DBB1F67E315BAAD2FF537BD369C60978 /* PFAxisDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAxisDirection.h; path = ZSViewUtil/Classes/SphereView/PFObjc/PFAxisDirection.h; sourceTree = "<group>"; };
-		DF2F1DE2706E27CB55167A972D3AB352 /* ZSCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSCollectionView.swift; path = ZSViewUtil/Classes/CollectionView/ZSCollectionView.swift; sourceTree = "<group>"; };
-		E104063CE60F42B3FC1A8E6CDA4DF8C9 /* ZSInputAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSInputAccessoryView.swift; path = ZSViewUtil/Classes/Field/ZSInputAccessoryView.swift; sourceTree = "<group>"; };
+		D31C094D735F8C913DC303D8472449F7 /* ZSFocusFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSFocusFlowLayout.swift; path = ZSViewUtil/Classes/CollectionView/FlowLayout/ZSFocusFlowLayout.swift; sourceTree = "<group>"; };
+		D4CF9812484F632913C24850D9E301AB /* ZSWaterFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSWaterFlowLayout.swift; path = ZSViewUtil/Classes/CollectionView/FlowLayout/ZSWaterFlowLayout.swift; sourceTree = "<group>"; };
 		E1051AFED5E53BA610CD450A6710DC80 /* Pods_ZSCarouselView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZSCarouselView_Tests.framework; path = "Pods-ZSCarouselView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E224E1C733A8992C91D107DDB4906877 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
 		E2DBD0BB77BDAD7EBADD0C9789D3965C /* ZSScrollCarouselFullView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSScrollCarouselFullView.swift; path = ZSCarouselView/Classes/ZSScrollCarouselFullView.swift; sourceTree = "<group>"; };
 		E7CEFC1D2829788C9EFFCD2AF7A0A8F2 /* Pods-ZSCarouselView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZSCarouselView_Example.modulemap"; sourceTree = "<group>"; };
-		E8B87AF298C959BA98FCCB7A01ADF685 /* ZSIndicatorTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSIndicatorTextView.swift; path = ZSViewUtil/Classes/Toast/Load/ZSIndicatorTextView.swift; sourceTree = "<group>"; };
-		E92BC938F26E94FA18D271162BC16FED /* ZSWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSWebView.swift; path = ZSViewUtil/Classes/WebView/ZSWebView.swift; sourceTree = "<group>"; };
-		EC465574DC02C52011E1B611DADC0D17 /* ZSUIBaseUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSUIBaseUtil.swift; path = ZSViewUtil/Classes/UIExt/ZSUIBaseUtil.swift; sourceTree = "<group>"; };
 		EC6C0E099C3EF359F0572FB2774FFEE6 /* Pods_ZSCarouselView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZSCarouselView_Example.framework; path = "Pods-ZSCarouselView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0A7419F4589FA3DB87803F94BBC60B /* PFPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFPoint.h; sourceTree = "<group>"; };
+		EEC10E358A39C59738E3794A45B388A0 /* ZSCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSCollectionView.swift; path = ZSViewUtil/Classes/CollectionView/ZSCollectionView.swift; sourceTree = "<group>"; };
+		EEC6DDF82299362574984D725E43C372 /* ZSInputAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSInputAccessoryView.swift; path = ZSViewUtil/Classes/Field/ZSInputAccessoryView.swift; sourceTree = "<group>"; };
 		F22621711D2BB3891BA0F045C5CC5C31 /* ZSCarouselView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZSCarouselView-Info.plist"; sourceTree = "<group>"; };
+		F43978883CA5B51F1F0725B4EFFF0E89 /* ZSTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSTextField.swift; path = ZSViewUtil/Classes/Field/ZSTextField.swift; sourceTree = "<group>"; };
 		F4AF2F3B4D1C293ACA2A99E75ABAE9C5 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
 		F6724BCD0D4B5F178943BBF12EADEF51 /* PFMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFMatrix.h; sourceTree = "<group>"; };
 		F72EAD360BB8A319EDB2FC6811BC9BEA /* ZSSphereCarouselView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZSSphereCarouselView.swift; sourceTree = "<group>"; };
+		F7F3860AE2387E6E40490B93DCCA094E /* ZSImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSImage.swift; path = ZSViewUtil/Classes/Extension/ZSImage.swift; sourceTree = "<group>"; };
 		F8015C57BE701936E92E189A139EBC4F /* Pods-ZSCarouselView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZSCarouselView_Tests.modulemap"; sourceTree = "<group>"; };
 		F8420610C8649BF0497223F27BBC4E97 /* ZSViewUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZSViewUtil.framework; path = ZSViewUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96DDA990E75674D51988EF6CD733C50 /* Pods-ZSCarouselView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZSCarouselView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FB01524E610452A6C237FFBC3C868098 /* ZSSphereCarouselView+Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ZSSphereCarouselView+Layout.swift"; sourceTree = "<group>"; };
+		FCB34F93C1DDD1BB783EFEA46B0DA1C1 /* ZSShadowView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSShadowView.swift; path = ZSViewUtil/Classes/Shadow/ZSShadowView.swift; sourceTree = "<group>"; };
+		FD581C0F30B8E93B5A1556C2352AF0F7 /* ZSShapeLayerUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZSShapeLayerUtil.swift; path = ZSViewUtil/Classes/Layer/ZSShapeLayerUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		097AB87247160A738C99437D023C50DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3316AFF9210570BB365378DE0071FAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A60FEB7EA1375A5E35944AC757ED16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67B63C021A0FA31B9F0F42FCF656BBDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,26 +311,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9ADAE0311B7F95DE73042044683116B8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				189F3B6C95DCEFC20492BBBD81F75497 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EBB4163BDD6D0441EB917D81AF46CADF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8DFF97B7553BE6F226FF52618D9DA79F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F14B9A6145A8E77B7F2CD63A63D6BA1C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				111AF182612BF2F4E8D057B72E290A10 /* Kingfisher */,
-				E37F6CD08A6236295E9CF6EC5E309525 /* ZSViewUtil */,
+				3F482AB2CC1DA5301B816D40674F970D /* ZSViewUtil */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -393,6 +385,50 @@
 				E34DCC8E2CF86B8D72232914781A840D /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		229DF86C716E42C0A49CD5AF22914BA6 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				BA776166FA6BC1BBCCAB783391FDBB0A /* ZSButton.swift */,
+				8830697925E35B6876394A5F0DC43EFB /* ZSCAAnimationUtil.swift */,
+				EEC10E358A39C59738E3794A45B388A0 /* ZSCollectionView.swift */,
+				B40B54909FF31567A1A1CE035599A580 /* ZSColor.swift */,
+				2B660E7832E789A40B5C6C6B0F7BD36A /* ZSDragCollectionView.swift */,
+				96F92D3D5AA8AF989008EE525BD3DC3A /* ZSDragCollectionViewServe.swift */,
+				5EFFCEEF461D8D884A0DC8CD1B7EFDA6 /* ZSDragStaticCollectionServe.swift */,
+				9834CBA47845554E39951A327B85C210 /* ZSDragStaticItemView.swift */,
+				C3611AF2C7AA49B96A9EACDAB18FA1A5 /* ZSDragStaticShakeItemView.swift */,
+				4D71167057CC52FEFED17653A0980214 /* ZSDragStaticShakeViewServe.swift */,
+				C4254F92CC1B0833A9B47E1FB78BAC26 /* ZSEditTableViewCell.swift */,
+				185BB90D452FF0BF9562BCD183157C21 /* ZSFixedSpecingFlowLayout.swift */,
+				D31C094D735F8C913DC303D8472449F7 /* ZSFocusFlowLayout.swift */,
+				F7F3860AE2387E6E40490B93DCCA094E /* ZSImage.swift */,
+				1D737980B7073C8380946C76A9492BFF /* ZSIndicatorTextView.swift */,
+				8481F0DBA186490634156885C7946DD6 /* ZSIndicatorTextViewManager.swift */,
+				EEC6DDF82299362574984D725E43C372 /* ZSInputAccessoryView.swift */,
+				71632C9D560CC8490DD086B28918129E /* ZSLayerUtil.swift */,
+				5EE3D87E1AA0A75C7563941EB7B0B980 /* ZSLayout.swift */,
+				52B24FE35C22300A4916158DF1571AF6 /* ZSLoadTextView.swift */,
+				118A93ACD214233745BB1A2798A04E4D /* ZSLoadTextViewManager.swift */,
+				257AD3CFA3B8612B7D4122B4C3E1BC04 /* ZSLoadView.swift */,
+				6F7CDBB99C595F1094932942C3BEA1B5 /* ZSLoadView+DisplayLink.swift */,
+				35521F7DA78248FBB3671E4D77E3BD52 /* ZSLoadViewManager.swift */,
+				CA26473E8CC1B5023F0103D9B84132E0 /* ZSNumberField.swift */,
+				26C62EB6F2790A498588A7020AE986F3 /* ZSPhoneField.swift */,
+				8E34EAE9B07F68A90D4F4216E841A85D /* ZSPlainFlowLayout.swift */,
+				19D0BFC88840E2D5A7CC3F52F12D0EF4 /* ZSPlayerView.swift */,
+				FCB34F93C1DDD1BB783EFEA46B0DA1C1 /* ZSShadowView.swift */,
+				FD581C0F30B8E93B5A1556C2352AF0F7 /* ZSShapeLayerUtil.swift */,
+				F43978883CA5B51F1F0725B4EFFF0E89 /* ZSTextField.swift */,
+				8C5534E3B1018341C859B9CC31A1B2D1 /* ZSToastView.swift */,
+				AB0A0D8CEAFE1AF30F06600DBF30AF47 /* ZSUIExtension.swift */,
+				D4CF9812484F632913C24850D9E301AB /* ZSWaterFlowLayout.swift */,
+				626195A3D965795AB5DB7CC3B86887BE /* ZSWebJSUtil.swift */,
+				C9250FDA5E3BE8D9A6B023B34694E87D /* ZSWebView.swift */,
+				5E32AC42502DB6C68BA157A45B099081 /* ZSWindowTranslate.swift */,
+			);
+			name = All;
 			sourceTree = "<group>";
 		};
 		33E9B8E06BB8170A4B64E772402B5EFA /* Pods-ZSCarouselView_Example */ = {
@@ -410,6 +446,17 @@
 			);
 			name = "Pods-ZSCarouselView_Example";
 			path = "Target Support Files/Pods-ZSCarouselView_Example";
+			sourceTree = "<group>";
+		};
+		3F482AB2CC1DA5301B816D40674F970D /* ZSViewUtil */ = {
+			isa = PBXGroup;
+			children = (
+				229DF86C716E42C0A49CD5AF22914BA6 /* All */,
+				7A1D94EDC87019B5CDDA443894CD842E /* Resources */,
+				8A41BA0EB860727B9886B2D18EFBCA29 /* Support Files */,
+			);
+			name = ZSViewUtil;
+			path = ZSViewUtil;
 			sourceTree = "<group>";
 		};
 		3FBCA6B1DB6F8E5464D842AB4D21D767 /* PFObjc */ = {
@@ -478,25 +525,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76793141D42EA75D73CA398741AFD00B /* Resources */ = {
+		7A1D94EDC87019B5CDDA443894CD842E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				558AA02D742CE69B4A8760804B151F5A /* ZSPreview.xcassets */,
+				451D0A15B64BD46FD67CAFFF43D72668 /* ZSPreview.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		90E7C0C00B8BA734C6AC8C670C30D7B9 /* Support Files */ = {
+		8A41BA0EB860727B9886B2D18EFBCA29 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B82441657DD82276F46E28D971E1D9BC /* ResourceBundle-ZSViewUtil-ZSViewUtil-Info.plist */,
-				80F93A825D102CBADE7769F85C76A78C /* ZSViewUtil.modulemap */,
-				372FD0D1ED3784B7AC950BBD2AF3300B /* ZSViewUtil-dummy.m */,
-				B0035C74F726E0C02F1FFE23FFDD88D0 /* ZSViewUtil-Info.plist */,
-				94B16B23D78904E39E4D267B21C9642D /* ZSViewUtil-prefix.pch */,
-				CDD8FD3D9E6628BB5A2921394C32CFCC /* ZSViewUtil-umbrella.h */,
-				0299A6FE12EF2235000D323615874D16 /* ZSViewUtil.debug.xcconfig */,
-				073E029704679E6896800C038828B9C1 /* ZSViewUtil.release.xcconfig */,
+				40A058E16F910A699BC29C204AC6AA05 /* ResourceBundle-ZSViewUtil-ZSViewUtil-Info.plist */,
+				B3AC96261E3AAD2AB748543684E57D62 /* ZSViewUtil.modulemap */,
+				0A70A420C40B5702D54B0B8495AB3166 /* ZSViewUtil-dummy.m */,
+				752E6AEB53F87E6EBB87EFCB2B73C89C /* ZSViewUtil-Info.plist */,
+				4D56ACB6144C4411D89120FE7078EB83 /* ZSViewUtil-prefix.pch */,
+				A14C460068A597B1929D562A1201C8D9 /* ZSViewUtil-umbrella.h */,
+				647FF61302F395A4F8475A580854270F /* ZSViewUtil.debug.xcconfig */,
+				A70E7AF6EECFFCEB423052C9C14E1135 /* ZSViewUtil.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ZSViewUtil";
@@ -521,54 +568,6 @@
 				DB5C87AC9B479F6CB914FCD24C60B7F6 /* ZSCarouselView */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B9475D0FAB5E0812B9E56E79E25292E6 /* All */ = {
-			isa = PBXGroup;
-			children = (
-				DBB1F67E315BAAD2FF537BD369C60978 /* PFAxisDirection.h */,
-				83E95FFDB1C30B9F8E893ADC82DFF515 /* PFMatrix.h */,
-				8BADFD3215B12DB7A071FDDB032FFC9E /* PFMatrixTransform.h */,
-				C50A0AE4B535F88248DD50F5EA6CD2A2 /* PFPoint.h */,
-				90CDD51083508772894C05E42FC541DA /* PFRadian.h */,
-				0CAEA77FAA89ED3104CA82094C1B5AEE /* ZSButton.swift */,
-				8AA2D2FD559A3751EE2059B887EFC56E /* ZSCAAnimationUtil.swift */,
-				DF2F1DE2706E27CB55167A972D3AB352 /* ZSCollectionView.swift */,
-				4E0AE4B7FDCA7DA3B1B76DDD98B2EF81 /* ZSDragCollectionView.swift */,
-				CC5469D33DA33C3CE2BAE38997505880 /* ZSDragCollectionViewServe.swift */,
-				5A1C801F06305E3C6EDFB7ABD4575737 /* ZSDragStaticCollectionServe.swift */,
-				C79749A4E30112C7A175893097054469 /* ZSDragStaticItemView.swift */,
-				7C41356C95C4A97368C339741FAE6D64 /* ZSDragStaticShakeItemView.swift */,
-				1BEEFD64DC9A5C0C93DD54C2A58C3751 /* ZSDragStaticShakeViewServe.swift */,
-				0FCF4A9A2D6F34279AE938CC27C01C3B /* ZSFocusFlowLayout.swift */,
-				126EA0F5ECE0DF16F58C8F8FE6C39B00 /* ZSImage.swift */,
-				E8B87AF298C959BA98FCCB7A01ADF685 /* ZSIndicatorTextView.swift */,
-				4ECC0AD4D4A4B7EDC2413B0B20824B77 /* ZSIndicatorTextViewManager.swift */,
-				E104063CE60F42B3FC1A8E6CDA4DF8C9 /* ZSInputAccessoryView.swift */,
-				AA5F3158CCFE2D824F891DF7DCDD2021 /* ZSLayerUtil.swift */,
-				93EAB57E4EAB98F2583F3D80188E5AE7 /* ZSLoadTextView.swift */,
-				5941AB388BEDD3F0C61349E6F584D4AC /* ZSLoadTextViewManager.swift */,
-				3621A234EA78C865BD43F6F47E814A2B /* ZSLoadView.swift */,
-				96554D378C317900B1B68C9864D2BCCC /* ZSLoadView+DisplayLink.swift */,
-				9584CAC69A1F8A8B670F1109DAF36769 /* ZSLoadViewManager.swift */,
-				D2D91C9FE62E9BD4E01C1AF2BB78BE3E /* ZSNumberField.swift */,
-				C5BDF19D0FD80FE65ADA74985A45C4EA /* ZSPhoneField.swift */,
-				82AD72F36C1EA842403243AC7106C145 /* ZSPlainFlowLayout.swift */,
-				D5CFB1EC5C3596656FB9C38873897F2C /* ZSPlayerView.swift */,
-				11DD6825DFE573496D6BCAFF5CB4547B /* ZSProfile.swift */,
-				0B432EB843115C2346192E68EFA13D69 /* ZSShapeLayerUtil.swift */,
-				7668E5F0698B921B76D5551CF50AF37C /* ZSSphereView.swift */,
-				6B04EBB202E1133627274D7D98265639 /* ZSSphereView+DisplayLink.swift */,
-				C887E427A889F2269BE69F53D6F7004A /* ZSSphereView+Gesture.swift */,
-				CAFCD336A014919464A8C2B14AC556B0 /* ZSSphereView+Layout.swift */,
-				4C6C73F3D5A731C104EC0BFB9C49E470 /* ZSTextField.swift */,
-				8F402B6D9F734A8D268110C09F1B5DC0 /* ZSToastView.swift */,
-				EC465574DC02C52011E1B611DADC0D17 /* ZSUIBaseUtil.swift */,
-				449F5266A422E9846326DEC4DA5FACD1 /* ZSWebJSUtil.swift */,
-				E92BC938F26E94FA18D271162BC16FED /* ZSWebView.swift */,
-				BCC832A8EA0E2A7913E5F9EF3F823024 /* ZSWindowTranslate.swift */,
-			);
-			name = All;
 			sourceTree = "<group>";
 		};
 		C89C7BBFC8DE1660DF922F0A7AA12117 /* Pod */ = {
@@ -618,17 +617,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E37F6CD08A6236295E9CF6EC5E309525 /* ZSViewUtil */ = {
-			isa = PBXGroup;
-			children = (
-				B9475D0FAB5E0812B9E56E79E25292E6 /* All */,
-				76793141D42EA75D73CA398741AFD00B /* Resources */,
-				90E7C0C00B8BA734C6AC8C670C30D7B9 /* Support Files */,
-			);
-			name = ZSViewUtil;
-			path = ZSViewUtil;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -637,6 +625,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8252B84B1D27BF0C9D8E22E14D0C0C46 /* Pods-ZSCarouselView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAF415BC5A276D0CEEDDE8484B6E66C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A496DDE6049AD0FF60AED2B926E51B3 /* ZSViewUtil-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,19 +650,6 @@
 			files = (
 				53164A2DDB944329FD8720F2F0D45228 /* Kingfisher-umbrella.h in Headers */,
 				39FC1A51FF31905080FDA44316A2E3FA /* Kingfisher.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D702897ADDCB5AD2CF11658B6CDBC76A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73FF46970C24712D9E5A16586C118891 /* PFAxisDirection.h in Headers */,
-				266149AF9A2962105A64CCBB1D3FD617 /* PFMatrix.h in Headers */,
-				D04ADB29398584848A08E44230472273 /* PFMatrixTransform.h in Headers */,
-				41A0668A3D25D1D4C73E4B02DFF77A0E /* PFPoint.h in Headers */,
-				7A9DF0B22B8E2532D71814402392783D /* PFRadian.h in Headers */,
-				1EBA30669C97DFB912AC72D4D9A4011C /* ZSViewUtil-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,11 +671,11 @@
 /* Begin PBXNativeTarget section */
 		08D02C3F431726771B683F343764765B /* ZSViewUtil-ZSViewUtil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54713858CD3D7B235C225A20FA9E2D69 /* Build configuration list for PBXNativeTarget "ZSViewUtil-ZSViewUtil" */;
+			buildConfigurationList = B3BF6572D1A16047B89B850961216C0A /* Build configuration list for PBXNativeTarget "ZSViewUtil-ZSViewUtil" */;
 			buildPhases = (
-				91AA51DCAC99C45D04A982E7C061B277 /* Sources */,
-				F14B9A6145A8E77B7F2CD63A63D6BA1C /* Frameworks */,
-				83CA2AB60C050830574E0BC38F32C0ED /* Resources */,
+				B6BB341589A95342B7CF3A64D5F72017 /* Sources */,
+				097AB87247160A738C99437D023C50DB /* Frameworks */,
+				CCC120AC23E279D1AFCCCD486EC55092 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -723,17 +706,17 @@
 		};
 		ACF8024B50D481615D7ED68E96D44B40 /* ZSViewUtil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA4403CD4D0E3F7143442FB945CC3C11 /* Build configuration list for PBXNativeTarget "ZSViewUtil" */;
+			buildConfigurationList = AC7323890F6C7BAF2340503B835B2714 /* Build configuration list for PBXNativeTarget "ZSViewUtil" */;
 			buildPhases = (
-				D702897ADDCB5AD2CF11658B6CDBC76A /* Headers */,
-				27D7983B5306E40A78EF210FAC3FE10A /* Sources */,
-				9ADAE0311B7F95DE73042044683116B8 /* Frameworks */,
-				1F210675D207A20016D3DC80B610D876 /* Resources */,
+				1AAF415BC5A276D0CEEDDE8484B6E66C /* Headers */,
+				4CC4E017C580755F2D10D689BD4FF8BF /* Sources */,
+				3316AFF9210570BB365378DE0071FAC2 /* Frameworks */,
+				3D086BFE857E99C7E3A936BA068E3B8B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				572CA6474A63B29FA96DE9C7318BE63A /* PBXTargetDependency */,
+				2AE1EADCAA6C5C97F0F4077108ACBD06 /* PBXTargetDependency */,
 			);
 			name = ZSViewUtil;
 			productName = ZSViewUtil;
@@ -838,11 +821,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F210675D207A20016D3DC80B610D876 /* Resources */ = {
+		3D086BFE857E99C7E3A936BA068E3B8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6446820D2822674664E76060FECD237 /* ZSViewUtil.bundle in Resources */,
+				1F7D010012D0A868BE076ADEA10C8B53 /* ZSViewUtil.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,18 +836,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83CA2AB60C050830574E0BC38F32C0ED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC5A6C0573D1394B45F1748CD4358148 /* ZSPreview.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E633C628D869E4E76B8631E685A5079 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC120AC23E279D1AFCCCD486EC55092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC31DC480EB7F032274BE8F79ECC9702 /* ZSPreview.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,50 +861,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		27D7983B5306E40A78EF210FAC3FE10A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1AC38839726990FEF9BAFA69ED6262A /* ZSButton.swift in Sources */,
-				01CD7F77C8DA8BE209EBC1AB2C8F2705 /* ZSCAAnimationUtil.swift in Sources */,
-				87EFAD3D990D1C420E41048AB28A5B7D /* ZSCollectionView.swift in Sources */,
-				D330B4D1BED3DAB08797BFD010D97806 /* ZSDragCollectionView.swift in Sources */,
-				A1CB1D2A157F4DD03B098C79FB5189F6 /* ZSDragCollectionViewServe.swift in Sources */,
-				CAC852725E32F2D943F69712B6F2FB8A /* ZSDragStaticCollectionServe.swift in Sources */,
-				ECC8678CE81FC9439EC065B1751DCE1A /* ZSDragStaticItemView.swift in Sources */,
-				266F215379096BF6D2D7CB1F612A87F8 /* ZSDragStaticShakeItemView.swift in Sources */,
-				171CCBDFC1DCD221CDDF8BB1C74F27F3 /* ZSDragStaticShakeViewServe.swift in Sources */,
-				9096DC220363A871BDA25612416331AA /* ZSFocusFlowLayout.swift in Sources */,
-				67D2F24B1C6A2B1729EB8AE15DCC7FAE /* ZSImage.swift in Sources */,
-				ACE7E874D12D1B5474B5018F7E8C2134 /* ZSIndicatorTextView.swift in Sources */,
-				F70BACC3D0F63FEAAD08176B94AED53E /* ZSIndicatorTextViewManager.swift in Sources */,
-				029A3140C1D6F3247376370436F7EA3A /* ZSInputAccessoryView.swift in Sources */,
-				8B930CD60FC5C596FE1D770B480943DF /* ZSLayerUtil.swift in Sources */,
-				9B2A12EFD838C04FFBDC8D22C3B89AC3 /* ZSLoadTextView.swift in Sources */,
-				0164E476F22B21F2AF344AEFF0A0AD56 /* ZSLoadTextViewManager.swift in Sources */,
-				C658F254024DDF4FF9A1F054F1E77F95 /* ZSLoadView+DisplayLink.swift in Sources */,
-				CD9BE48F2113448DBDCDD40EA6D8882A /* ZSLoadView.swift in Sources */,
-				471DF96CBA42DC01FD4987397FE3A161 /* ZSLoadViewManager.swift in Sources */,
-				2F5AA5FF839883FF6A11E8AE6DDCD773 /* ZSNumberField.swift in Sources */,
-				01D2356D5E0F8A625746B46038E75929 /* ZSPhoneField.swift in Sources */,
-				266E3DA56618712ECF7EA606A19DEBD1 /* ZSPlainFlowLayout.swift in Sources */,
-				D22D94EA0723C9F16C48347B22CBB121 /* ZSPlayerView.swift in Sources */,
-				CE43FD75B047F34D13E14CB088F2E240 /* ZSProfile.swift in Sources */,
-				05DA9D51061B3FDC55470F42BAD1BD63 /* ZSShapeLayerUtil.swift in Sources */,
-				7939DE5052A3856A6065DED37CF44961 /* ZSSphereView+DisplayLink.swift in Sources */,
-				716D430A71C60F91D4BD412BC445DFAB /* ZSSphereView+Gesture.swift in Sources */,
-				43A10169AA0EBFAE75733A0E5ABF750C /* ZSSphereView+Layout.swift in Sources */,
-				64A885B1ADA9941D271C00B9C0700ADE /* ZSSphereView.swift in Sources */,
-				CBAA53A4816D5210C0B9303B9D591EEF /* ZSTextField.swift in Sources */,
-				D6F50F6802AC1C7314BB2978EA904F52 /* ZSToastView.swift in Sources */,
-				CC3DDFF3B44DA4D7F5C665FCB7EAB2DB /* ZSUIBaseUtil.swift in Sources */,
-				C2CB7ECC8FC9C5D1120CDDC772A243BB /* ZSViewUtil-dummy.m in Sources */,
-				EF5E5E314D72BDA75E87BD440D15A926 /* ZSWebJSUtil.swift in Sources */,
-				B07EC1999BCE4EDEE62AF3552C486224 /* ZSWebView.swift in Sources */,
-				AB11FBA9ADF772246999B9E366C4BED8 /* ZSWindowTranslate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		434B6F9CACF190785FE64AD5921875A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -970,6 +909,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CC4E017C580755F2D10D689BD4FF8BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F82C1015D4BAC234BAAEF2A96D7AE2 /* ZSButton.swift in Sources */,
+				E5B276A84C75F2CA3C1C177CDD4E5986 /* ZSCAAnimationUtil.swift in Sources */,
+				52494DB7448BF790B190DBE4DD321591 /* ZSCollectionView.swift in Sources */,
+				0E1EE7EF74472B6CA8EF3DDD3B8E3419 /* ZSColor.swift in Sources */,
+				5178895CF9A91493728C8F7D38BEE77E /* ZSDragCollectionView.swift in Sources */,
+				867E9398E13468A13805D0A2B87FB6E7 /* ZSDragCollectionViewServe.swift in Sources */,
+				ECD7B08511717C0DDED81C285F88F9CB /* ZSDragStaticCollectionServe.swift in Sources */,
+				16E923419205CDCFEED8F5E05272621F /* ZSDragStaticItemView.swift in Sources */,
+				79C4F528247444653EFF3B28D051CC27 /* ZSDragStaticShakeItemView.swift in Sources */,
+				46568D41F048358D4CFC91002630D915 /* ZSDragStaticShakeViewServe.swift in Sources */,
+				363957190BCF2AA3DBFE7F7311795227 /* ZSEditTableViewCell.swift in Sources */,
+				88122F2D5259DFAC9D5DC0D0A010DA3C /* ZSFixedSpecingFlowLayout.swift in Sources */,
+				85FF59D5A5B12496B36BB2470CFAA8B8 /* ZSFocusFlowLayout.swift in Sources */,
+				C123EE5F53E1CCB45D8017A4229C985A /* ZSImage.swift in Sources */,
+				D3991ABB630554D7E370884F38533B44 /* ZSIndicatorTextView.swift in Sources */,
+				68B3BDCEECAA9E73DE45EA58F97D99F2 /* ZSIndicatorTextViewManager.swift in Sources */,
+				3F820FCA64D8AD09D64DBED1AF9AC5AA /* ZSInputAccessoryView.swift in Sources */,
+				D0CD394A8EFD4944BE7453BBC3DB3F17 /* ZSLayerUtil.swift in Sources */,
+				01F3C5F0F37FA3E6D5EF2CF59AF41284 /* ZSLayout.swift in Sources */,
+				D48D89F28C18FB7648BC048E32139CAD /* ZSLoadTextView.swift in Sources */,
+				08B35BB7A0242AF794A4CA5C008C777C /* ZSLoadTextViewManager.swift in Sources */,
+				F979FA9F9F7952921063534E6A2610EF /* ZSLoadView+DisplayLink.swift in Sources */,
+				1ADFC380DA8AD97CBA6F1BB28B580B32 /* ZSLoadView.swift in Sources */,
+				47B3290283F3042AAB02911A0CE8F37E /* ZSLoadViewManager.swift in Sources */,
+				7AE7F7C37F25C84009ECC02029E67294 /* ZSNumberField.swift in Sources */,
+				9EC34C56CAC02DBFF217D3D6828644FF /* ZSPhoneField.swift in Sources */,
+				9F0971D384E22ECA9CA14AB97D928516 /* ZSPlainFlowLayout.swift in Sources */,
+				2CF2B468A2967AEE982A34AD6E2133FC /* ZSPlayerView.swift in Sources */,
+				31D4F884ECAF7AE47C02A37EB717DF93 /* ZSShadowView.swift in Sources */,
+				B7CFE0C89F672FD16C225A024F436D87 /* ZSShapeLayerUtil.swift in Sources */,
+				59C00040159DCA58FE934D0BDABE9A31 /* ZSTextField.swift in Sources */,
+				EDD8C413FD1BE68A6E7F3DCB412A9CBC /* ZSToastView.swift in Sources */,
+				E760219E59C09AE64A8F8A9EE790B783 /* ZSUIExtension.swift in Sources */,
+				5EC3A2EF2AA442885A63AF92B5B40E04 /* ZSViewUtil-dummy.m in Sources */,
+				0AE8CDB474D9AC1972BA479B01882E37 /* ZSWaterFlowLayout.swift in Sources */,
+				DE636F38F889345AD1811B317F03EA2A /* ZSWebJSUtil.swift in Sources */,
+				A3742B6A57F5995631BCC7EE393102F8 /* ZSWebView.swift in Sources */,
+				F5179ED4E3CCB29798A4E8EE813794E9 /* ZSWindowTranslate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		798356D8835E7ECDEE4E474E87135907 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -986,7 +970,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91AA51DCAC99C45D04A982E7C061B277 /* Sources */ = {
+		B6BB341589A95342B7CF3A64D5F72017 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1014,11 +998,11 @@
 			target = E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */;
 			targetProxy = A1E472449C1433E5067DC9F97E37AEDC /* PBXContainerItemProxy */;
 		};
-		572CA6474A63B29FA96DE9C7318BE63A /* PBXTargetDependency */ = {
+		2AE1EADCAA6C5C97F0F4077108ACBD06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ZSViewUtil-ZSViewUtil";
 			target = 08D02C3F431726771B683F343764765B /* ZSViewUtil-ZSViewUtil */;
-			targetProxy = A7D767A9153134C2F16E7F8BE6800AB0 /* PBXContainerItemProxy */;
+			targetProxy = 1DC2AD2A12D5114273B2276D144F19B3 /* PBXContainerItemProxy */;
 		};
 		BD93B70AD448C79B9F30E7D79793EAF9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1029,6 +1013,54 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		224C63A8A64ECC10C0B1E2524BCDA65C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647FF61302F395A4F8475A580854270F /* ZSViewUtil.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZSViewUtil";
+				IBSC_MODULE = ZSViewUtil;
+				INFOPLIST_FILE = "Target Support Files/ZSViewUtil/ResourceBundle-ZSViewUtil-ZSViewUtil-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ZSViewUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3CD66056FF9753C69C1A9B7D1AF19974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647FF61302F395A4F8475A580854270F /* ZSViewUtil.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZSViewUtil/ZSViewUtil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZSViewUtil/ZSViewUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZSViewUtil/ZSViewUtil.modulemap";
+				PRODUCT_MODULE_NAME = ZSViewUtil;
+				PRODUCT_NAME = ZSViewUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4108A653663A42651C4BBFCC5FE66664 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 241496A76BA574A2532FECE0E2B4C926 /* Kingfisher.release.xcconfig */;
@@ -1127,37 +1159,6 @@
 			};
 			name = Release;
 		};
-		8D4132D8DAEB2E71F5B34845928A530D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0299A6FE12EF2235000D323615874D16 /* ZSViewUtil.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZSViewUtil/ZSViewUtil-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZSViewUtil/ZSViewUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZSViewUtil/ZSViewUtil.modulemap";
-				PRODUCT_MODULE_NAME = ZSViewUtil;
-				PRODUCT_NAME = ZSViewUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9134326BC0656B2A084208C739C804F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 62530C1D8791CEBCD1FA65354A9A1AAF /* Pods-ZSCarouselView_Example.release.xcconfig */;
@@ -1255,23 +1256,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		AD1260C4B2CAB0B56990542DF14EC1D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 073E029704679E6896800C038828B9C1 /* ZSViewUtil.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZSViewUtil";
-				IBSC_MODULE = ZSViewUtil;
-				INFOPLIST_FILE = "Target Support Files/ZSViewUtil/ResourceBundle-ZSViewUtil-ZSViewUtil-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = ZSViewUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 		B0087CB4594321EF41619F3181FE120E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1397,9 +1381,41 @@
 			};
 			name = Debug;
 		};
-		D3B743B4771C01402BC1514E241F4A28 /* Debug */ = {
+		BBE91CE455DF34038B64B8E924FFEAD2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0299A6FE12EF2235000D323615874D16 /* ZSViewUtil.debug.xcconfig */;
+			baseConfigurationReference = A70E7AF6EECFFCEB423052C9C14E1135 /* ZSViewUtil.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZSViewUtil/ZSViewUtil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZSViewUtil/ZSViewUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZSViewUtil/ZSViewUtil.modulemap";
+				PRODUCT_MODULE_NAME = ZSViewUtil;
+				PRODUCT_NAME = ZSViewUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CED7F3539B44FADA3786130FC32EE325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A70E7AF6EECFFCEB423052C9C14E1135 /* ZSViewUtil.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZSViewUtil";
@@ -1412,7 +1428,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 		DD0BF667C69DA01151AECD236807FAAD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1444,38 +1460,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		E02FB244908C03C98B526E0A9EA3DA7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 073E029704679E6896800C038828B9C1 /* ZSViewUtil.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZSViewUtil/ZSViewUtil-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZSViewUtil/ZSViewUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZSViewUtil/ZSViewUtil.modulemap";
-				PRODUCT_MODULE_NAME = ZSViewUtil;
-				PRODUCT_NAME = ZSViewUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		F74264D81B7C67167C76E0888D92702E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1549,15 +1533,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54713858CD3D7B235C225A20FA9E2D69 /* Build configuration list for PBXNativeTarget "ZSViewUtil-ZSViewUtil" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3B743B4771C01402BC1514E241F4A28 /* Debug */,
-				AD1260C4B2CAB0B56990542DF14EC1D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7975DE731E61F915096C31E290E8AE5B /* Build configuration list for PBXNativeTarget "Kingfisher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1567,11 +1542,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA4403CD4D0E3F7143442FB945CC3C11 /* Build configuration list for PBXNativeTarget "ZSViewUtil" */ = {
+		AC7323890F6C7BAF2340503B835B2714 /* Build configuration list for PBXNativeTarget "ZSViewUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D4132D8DAEB2E71F5B34845928A530D /* Debug */,
-				E02FB244908C03C98B526E0A9EA3DA7A /* Release */,
+				3CD66056FF9753C69C1A9B7D1AF19974 /* Debug */,
+				BBE91CE455DF34038B64B8E924FFEAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3BF6572D1A16047B89B850961216C0A /* Build configuration list for PBXNativeTarget "ZSViewUtil-ZSViewUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				224C63A8A64ECC10C0B1E2524BCDA65C /* Debug */,
+				CED7F3539B44FADA3786130FC32EE325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
