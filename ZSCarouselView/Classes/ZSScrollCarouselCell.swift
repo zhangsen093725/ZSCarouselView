@@ -25,7 +25,7 @@ import UIKit
     
     open override func layoutSubviews() {
         super.layoutSubviews()
-        contentView.frame = CGRect(x: 0, y: 0, width: bounds.width - minimumLineSpacing, height: bounds.height - minimumInteritemSpacing)
+        contentView.frame = CGRect(x: 0, y: 0, width: bounds.width - minimumInteritemSpacing, height: bounds.height - minimumLineSpacing)
         imageView.frame = contentView.bounds
     }
 }

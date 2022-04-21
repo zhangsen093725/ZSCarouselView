@@ -9,7 +9,7 @@ import UIKit
 
 @objcMembers open class ZSScrollCarouselCustomView: ZSScrollCarouselView {
     
-    var _isBeginDragging_: Bool = false
+    var _isBeginDragging: Bool = false
     
     private override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,8 +22,8 @@ import UIKit
     public convenience init(collectionViewLayout: UICollectionViewFlowLayout,
                             cellClass: ZSScrollCarouselCell.Type = ZSScrollCarouselCell.self) {
         self.init(frame: .zero)
-        _collectionViewLayout_ = collectionViewLayout
-        _cellClass_ = cellClass
+        _collectionViewLayout = collectionViewLayout
+        _cellClass = cellClass
     }
     
     open override func configCollectionView(_ collectionView: UICollectionView) {
@@ -42,55 +42,55 @@ extension ZSScrollCarouselCustomView {
         
         if isHorizontal
         {
-            if _collectionView_.contentOffset.x <= 0
+            if _collectionView.contentOffset.x <= 0
             {
-                guard let cell = _collectionView_.cellForItem(at: IndexPath(item: 0, section: 0)) else { return }
-                let offset = _collectionView_.contentSize.width - cell.frame.size.width - collectionViewLayout.itemSize.width - collectionViewLayout.minimumLineSpacing
-                _collectionView_.setContentOffset(CGPoint(x: offset, y: 0), animated: false)
+                guard let cell = _collectionView.cellForItem(at: IndexPath(item: 0, section: 0)) else { return }
+                let offset = _collectionView.contentSize.width - cell.frame.size.width - collectionViewLayout.itemSize.width - collectionViewLayout.minimumLineSpacing
+                _collectionView.setContentOffset(CGPoint(x: offset, y: 0), animated: false)
 
-                if !_isBeginDragging_
+                if !_isBeginDragging
                 {
-                    scrollViewWillBeginDecelerating(_collectionView_)
+                    scrollViewWillBeginDecelerating(_collectionView)
                 }
             }
-            else if _collectionView_.contentOffset.x >= _collectionView_.contentSize.width - _collectionView_.frame.width
+            else if _collectionView.contentOffset.x >= _collectionView.contentSize.width - _collectionView.frame.width
             {
-                guard let pre = _collectionView_.cellForItem(at: IndexPath(item: _loopScrollItemCount_ - 2, section: 0)) else { return }
-                guard let next = _collectionView_.cellForItem(at: IndexPath(item: _loopScrollItemCount_ - 1, section: 0)) else { return }
+                guard let pre = _collectionView.cellForItem(at: IndexPath(item: _loopScrollItemCount - 2, section: 0)) else { return }
+                guard let next = _collectionView.cellForItem(at: IndexPath(item: _loopScrollItemCount - 1, section: 0)) else { return }
                 
-                let offset = _collectionView_.contentOffset.x - pre.frame.origin.x + (next.frame.origin.x - pre.frame.maxX)
-                _collectionView_.setContentOffset(CGPoint(x: offset, y: 0), animated: false)
+                let offset = _collectionView.contentOffset.x - pre.frame.origin.x + (next.frame.origin.x - pre.frame.maxX)
+                _collectionView.setContentOffset(CGPoint(x: offset, y: 0), animated: false)
                 
-                if !_isBeginDragging_
+                if !_isBeginDragging
                 {
-                    scrollViewWillBeginDecelerating(_collectionView_)
+                    scrollViewWillBeginDecelerating(_collectionView)
                 }
             }
         }
         else
         {
-            if _collectionView_.contentOffset.y <= 0
+            if _collectionView.contentOffset.y <= 0
             {
-                guard let cell = _collectionView_.cellForItem(at: IndexPath(item: 0, section: 0)) else { return }
-                let offset = _collectionView_.contentSize.height - cell.frame.size.height - collectionViewLayout.itemSize.height - collectionViewLayout.minimumLineSpacing
-                _collectionView_.setContentOffset(CGPoint(x: 0, y: offset), animated: false)
+                guard let cell = _collectionView.cellForItem(at: IndexPath(item: 0, section: 0)) else { return }
+                let offset = _collectionView.contentSize.height - cell.frame.size.height - collectionViewLayout.itemSize.height - collectionViewLayout.minimumLineSpacing
+                _collectionView.setContentOffset(CGPoint(x: 0, y: offset), animated: false)
 
-                if !_isBeginDragging_
+                if !_isBeginDragging
                 {
-                    scrollViewWillBeginDecelerating(_collectionView_)
+                    scrollViewWillBeginDecelerating(_collectionView)
                 }
             }
-            else if _collectionView_.contentOffset.y >= _collectionView_.contentSize.height - _collectionView_.frame.height
+            else if _collectionView.contentOffset.y >= _collectionView.contentSize.height - _collectionView.frame.height
             {
-                guard let pre = _collectionView_.cellForItem(at: IndexPath(item: _loopScrollItemCount_ - 2, section: 0)) else { return }
-                guard let next = _collectionView_.cellForItem(at: IndexPath(item: _loopScrollItemCount_ - 1, section: 0)) else { return }
+                guard let pre = _collectionView.cellForItem(at: IndexPath(item: _loopScrollItemCount - 2, section: 0)) else { return }
+                guard let next = _collectionView.cellForItem(at: IndexPath(item: _loopScrollItemCount - 1, section: 0)) else { return }
 
-                let offset = _collectionView_.contentOffset.y - pre.frame.origin.y + (next.frame.origin.y - pre.frame.maxY)
-                _collectionView_.setContentOffset(CGPoint(x: 0, y: offset), animated: false)
+                let offset = _collectionView.contentOffset.y - pre.frame.origin.y + (next.frame.origin.y - pre.frame.maxY)
+                _collectionView.setContentOffset(CGPoint(x: 0, y: offset), animated: false)
 
-                if !_isBeginDragging_
+                if !_isBeginDragging
                 {
-                    scrollViewWillBeginDecelerating(_collectionView_)
+                    scrollViewWillBeginDecelerating(_collectionView)
                 }
             }
         }
@@ -98,16 +98,16 @@ extension ZSScrollCarouselCustomView {
     
     func calculationPage() -> Int {
         
-        let xx = (_collectionView_.frame.width - collectionViewLayout.itemSize.width) * 0.5
-        let yy = (_collectionView_.frame.height - collectionViewLayout.itemSize.height) * 0.5
+        let xx = (_collectionView.frame.width - collectionViewLayout.itemSize.width) * 0.5
+        let yy = (_collectionView.frame.height - collectionViewLayout.itemSize.height) * 0.5
         
-        let itemWidth = collectionViewLayout.itemSize.width + collectionViewLayout.minimumLineSpacing
-        let itemHeight = collectionViewLayout.itemSize.height + collectionViewLayout.minimumLineSpacing
+        let width = collectionViewLayout.itemSize.width + collectionViewLayout.minimumLineSpacing
+        let height = collectionViewLayout.itemSize.height + collectionViewLayout.minimumLineSpacing
         
-        let offsetX = xx + _collectionView_.contentOffset.x
-        let offsetY = yy + _collectionView_.contentOffset.y
+        let offsetX = xx + _collectionView.contentOffset.x
+        let offsetY = yy + _collectionView.contentOffset.y
         
-        return collectionViewLayout.scrollDirection == .horizontal ? Int(offsetX / itemWidth  + 0.5) : Int(offsetY / itemHeight + 0.5)
+        return Int((collectionViewLayout.scrollDirection == .horizontal ? offsetX / width : offsetY / height) + 0.5)
     }
     
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -119,19 +119,19 @@ extension ZSScrollCarouselCustomView {
         
         let currentPage = calculationPage()
         
-        guard currentPage != _cachePage_ else { return }
+        guard currentPage != _cachePage else { return }
         
-        _cachePage_ = currentPage
+        _cachePage = currentPage
         
         if isLoopScroll
         {
-            guard currentPage != _loopScrollItemCount_ - 1 else { return }
+            guard currentPage != _loopScrollItemCount - 1 else { return }
             guard currentPage != 0 else { return }
             delegate?.zs_carouseViewDidScroll(self, index: currentPage - 1)
         }
         else
         {
-            guard currentPage != _itemCount_ - 1 else { return }
+            guard currentPage != _itemCount - 1 else { return }
             delegate?.zs_carouseViewDidScroll(self, index: currentPage)
         }
     }
@@ -140,14 +140,14 @@ extension ZSScrollCarouselCustomView {
         
         super.scrollViewWillBeginDragging(scrollView)
         
-        _isBeginDragging_ = true
+        _isBeginDragging = true
     }
     
     open override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
         super.scrollViewDidEndDragging(scrollView, willDecelerate: decelerate)
         
-        _isBeginDragging_ = false
+        _isBeginDragging = false
         scrollViewWillBeginDecelerating(scrollView)
     }
     
@@ -155,8 +155,7 @@ extension ZSScrollCarouselCustomView {
         
         let currentPage = calculationPage()
         
-        let isHorizontal: Bool = collectionViewLayout.scrollDirection == .horizontal
-        
-        _collectionView_.scrollToItem(at: IndexPath(item: currentPage, section: 0), at: isHorizontal ? .centeredHorizontally : .centeredVertically, animated: true)
+        let isHorizontal = collectionViewLayout.scrollDirection == .horizontal
+        self.collectionView.scrollToItem(at: IndexPath(item: currentPage, section: 0), at: isHorizontal ? .centeredHorizontally : .centeredVertically, animated: true)
     }
 }

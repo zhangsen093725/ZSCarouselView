@@ -36,7 +36,7 @@ class ZSScrollCarouselViewController: UIViewController, ZSScrollCarouselViewDele
         let loopScroll = ZSScrollCarouselCustomView(collectionViewLayout: layout, cellClass: ZSScrollCarouselCustomCell.self)
         loopScroll.delegate = self
         loopScroll.dataSource = self
-        loopScroll.isLoopScroll = false
+//        loopScroll.isLoopScroll = false
         view.addSubview(loopScroll)
         return loopScroll
     }()
@@ -74,8 +74,8 @@ class ZSScrollCarouselViewController: UIViewController, ZSScrollCarouselViewDele
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         carouseFullView.frame = CGRect(x: (view.frame.width - 300) * 0.5, y: 75, width: 300, height: 150)
-        carouseCustomView.frame = CGRect(x: (view.frame.width - view.frame.width) * 0.5, y: carouseFullView.frame.maxY + 40, width: view.frame.width, height: 228)
-        carouseCustomView2.frame = CGRect(x: (view.frame.width - 300) * 0.5, y: carouseCustomView.frame.maxY + 40, width: 300, height: 150)
+//        carouseCustomView.frame = CGRect(x: (view.frame.width - view.frame.width) * 0.5, y: carouseFullView.frame.maxY + 40, width: view.frame.width, height: 228)
+//        carouseCustomView2.frame = CGRect(x: (view.frame.width - 300) * 0.5, y: carouseCustomView.frame.maxY + 40, width: 300, height: 150)
     }
     
     

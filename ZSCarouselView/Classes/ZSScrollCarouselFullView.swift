@@ -10,7 +10,7 @@ import UIKit
 @objcMembers open class ZSScrollCarouselFullView: ZSScrollCarouselView {
     
     /// item 之间的间隙
-    public var minimumSpacing: CGFloat = 0 
+    public var minimumSpacing: CGFloat = 0
     
     private override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,20 +25,20 @@ import UIKit
         
         self.init(frame: .zero)
         collectionViewLayout.scrollDirection = scrollDirection
-        _cellClass_ = cellClass
+        _cellClass = cellClass
     }
     
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        if collectionViewLayout.scrollDirection == .horizontal
-        {
-            _collectionView_.frame = CGRect(x: 0, y: 0, width: bounds.width + minimumSpacing, height: frame.height)
-        }
-        else
-        {
-            _collectionView_.frame = CGRect(x: 0, y: 0, width: bounds.width, height: frame.height  + minimumSpacing)
-        }
+//        if collectionViewLayout.scrollDirection == .horizontal
+//        {
+//            _collectionView.frame = CGRect(x: 0, y: 0, width: bounds.width + minimumSpacing, height: frame.height)
+//        }
+//        else
+//        {
+//            _collectionView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: frame.height  + minimumSpacing)
+//        }
     }
 }
 
@@ -53,13 +53,13 @@ extension ZSScrollCarouselFullView {
         
         if collectionViewLayout.scrollDirection == .horizontal
         {
-            cell.minimumLineSpacing = minimumSpacing
-            cell.minimumInteritemSpacing = 0
+            cell.minimumInteritemSpacing = minimumSpacing
+            cell.minimumLineSpacing = 0
         }
         else
         {
-            cell.minimumLineSpacing = 0
-            cell.minimumInteritemSpacing = minimumSpacing
+            cell.minimumInteritemSpacing = 0
+            cell.minimumLineSpacing = minimumSpacing
         }
         
         dataSource?.zs_configCarouseCell(cell, itemAt: scrollCarouseIndex(from: indexPath.item))
@@ -98,31 +98,30 @@ extension ZSScrollCarouselFullView {
         
         if isHorizontal
         {
-            if _collectionView_.contentOffset.x <= 0
+            if _collectionView.contentOffset.x <= 0
             {
-                _collectionView_.setContentOffset(CGPoint(x: collectionViewLayout.itemSize.width * CGFloat(_itemCount_), y: 0), animated: false)
+                _collectionView.setContentOffset(CGPoint(x: collectionViewLayout.itemSize.width * CGFloat(_itemCount), y: 0), animated: false)
             }
-            else if Int(_collectionView_.contentOffset.x) >= Int(collectionViewLayout.itemSize.width) * (_loopScrollItemCount_ - 1)
+            else if Int(_collectionView.contentOffset.x) >= Int(collectionViewLayout.itemSize.width) * (_loopScrollItemCount - 1)
             {
-                _collectionView_.setContentOffset(CGPoint(x: collectionViewLayout.itemSize.width, y: 0), animated: false)
+                _collectionView.setContentOffset(CGPoint(x: collectionViewLayout.itemSize.width, y: 0), animated: false)
             }
         }
         else
         {
-            if _collectionView_.contentOffset.y <= 0
+            if _collectionView.contentOffset.y <= 0
             {
-                _collectionView_.setContentOffset(CGPoint(x: 0, y: collectionViewLayout.itemSize.height * CGFloat(_itemCount_)), animated: false)
+                _collectionView.setContentOffset(CGPoint(x: 0, y: collectionViewLayout.itemSize.height * CGFloat(_itemCount)), animated: false)
             }
-            else if Int(_collectionView_.contentOffset.y) >= Int(collectionViewLayout.itemSize.height) * (_loopScrollItemCount_ - 1)
+            else if Int(_collectionView.contentOffset.y) >= Int(collectionViewLayout.itemSize.height) * (_loopScrollItemCount - 1)
             {
-                _collectionView_.setContentOffset(CGPoint(x: 0, y: collectionViewLayout.itemSize.height), animated: false)
+                _collectionView.setContentOffset(CGPoint(x: 0, y: collectionViewLayout.itemSize.height), animated: false)
             }
         }
-        
     }
     
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    
+        
         if isLoopScroll
         {
             calculationLoopScrollOffset()
@@ -133,19 +132,19 @@ extension ZSScrollCarouselFullView {
         
         let currentPage = collectionViewLayout.scrollDirection == .horizontal ? Int(offsetX / collectionViewLayout.itemSize.width) : Int(offsetY / collectionViewLayout.itemSize.height)
         
-        guard currentPage != _cachePage_ else { return }
+        guard currentPage != _cachePage else { return }
         
-        _cachePage_ = currentPage
+        _cachePage = currentPage
         
         if isLoopScroll
         {
-            guard currentPage != _loopScrollItemCount_ - 1 else { return }
+            guard currentPage != _loopScrollItemCount - 1 else { return }
             guard currentPage != 0 else { return }
             delegate?.zs_carouseViewDidScroll(self, index: currentPage - 1)
         }
         else
         {
-            guard currentPage != _itemCount_ - 1 else { return }
+            guard currentPage != _itemCount - 1 else { return }
             delegate?.zs_carouseViewDidScroll(self, index: currentPage)
         }
     }
