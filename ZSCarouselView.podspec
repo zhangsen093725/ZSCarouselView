@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZSCarouselView'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '无限轮播'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/zhangsen093725/ZSCarouselView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   
-  s.author           = { 'zhangsen093725' => 'joshzhang@yntengyun.com' }
+  s.author           = { 'Josh' => '376019018@qq.com' }
   s.source           = { :git => 'https://github.com/zhangsen093725/ZSCarouselView.git', :tag => s.version.to_s }
   
   s.swift_version    = '5.0'

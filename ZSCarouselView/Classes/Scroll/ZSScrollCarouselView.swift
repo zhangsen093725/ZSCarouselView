@@ -13,11 +13,9 @@ import UIKit
     /// - Parameter carouseView: carouseView
     func zs_numberOfItemcarouseView(_ carouseView: ZSScrollCarouselView) -> Int
     
-    /// 滚动到的视图
-    /// - Parameters:
-    ///   - cell: 当前的carouseCell
-    ///   - index: 当前的index
-    func zs_configCarouseCell(_ cell: ZSScrollCarouselCell, itemAt index: Int)
+    /// 自定义Cell
+    /// - Returns: 自定义Cell标识
+    func zs_carouseView(_ carouseView: ZSScrollCarouselView, dequeueReusableCellWithReuseIdentifierAt index: Int) -> String?
 }
 
 @objc public protocol ZSScrollCarouselViewDelegate {
@@ -33,6 +31,12 @@ import UIKit
     ///   - carouseView: carouseView
     ///   - index: 当前的index
     func zs_carouseViewDidScroll(_ carouseView: ZSScrollCarouselView, index: Int)
+    
+    /// 滚动到的视图
+    /// - Parameters:
+    ///   - cell: 当前的carouseCell
+    ///   - index: 当前的index
+    func zs_configCarouseCell(_ cell: UICollectionViewCell, itemAt index: Int)
 }
 
 @objcMembers open class ZSScrollCarouselView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -44,7 +48,11 @@ import UIKit
     public weak var delegate: ZSScrollCarouselViewDelegate?
     
     /// 是否开启自动滚动，默认为 true
-    public var isAutoScroll: Bool = true
+    public var isAutoScroll: Bool = true {
+        didSet {
+            isAutoScroll ? beginAutoScroll() : endAutoScroll()
+        }
+    }
     
     /// 自动滚动的间隔时长，默认是 3 秒
     public var interval: TimeInterval = 3
@@ -52,6 +60,13 @@ import UIKit
     /// 是否开启循环滚动，默认是true
     public var isLoopScroll: Bool = true {
         didSet {
+            reloadData()
+        }
+    }
+    
+    public var contentInset: UIEdgeInsets = .zero {
+        didSet {
+            collectionView.contentInset = contentInset
             reloadData()
         }
     }
@@ -94,7 +109,6 @@ import UIKit
         
         _cellClass = ZSScrollCarouselCell.self
         _collectionViewLayout = UICollectionViewFlowLayout()
-//        beginAutoScroll()
     }
     
     required public init?(coder: NSCoder) {
@@ -121,9 +135,20 @@ import UIKit
         }
     }
     
+    open func register(_ cellClass: UICollectionViewCell.Type?, forCellWithReuseIdentifier identifier: String) {
+        
+        collectionView.register(cellClass, forCellWithReuseIdentifier: identifier)
+    }
+    
+    open func register(nib: UINib?, forCellWithReuseIdentifier identifier: String) {
+        
+        collectionView.register(nib, forCellWithReuseIdentifier: identifier)
+    }
+    
     open func configCollectionView(_ collectionView: UICollectionView) {
+        
         collectionView.isPagingEnabled = true
-        collectionView.register(cellClass, forCellWithReuseIdentifier: cellClass.zs_identifier)
+        register(cellClass, forCellWithReuseIdentifier: cellClass.zs_identifier)
     }
     
     open func reloadData() {
@@ -224,9 +249,19 @@ extension ZSScrollCarouselView {
     
     open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellClass.zs_identifier, for: indexPath) as! ZSScrollCarouselCell
+        var reuseIdentifier: String = cellClass.zs_identifier
         
-        dataSource?.zs_configCarouseCell(cell, itemAt: scrollCarouseIndex(from: indexPath.item))
+        if let __reuseIdentifier = self.dataSource?.zs_carouseView(self, dequeueReusableCellWithReuseIdentifierAt: scrollCarouseIndex(from: indexPath.item))
+        {
+            if __reuseIdentifier.count > 0
+            {
+                reuseIdentifier = __reuseIdentifier
+            }
+        }
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        
+        delegate?.zs_configCarouseCell(cell, itemAt: scrollCarouseIndex(from: indexPath.item))
         
         return cell
     }

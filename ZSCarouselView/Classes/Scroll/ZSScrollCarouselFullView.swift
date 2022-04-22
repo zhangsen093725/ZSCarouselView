@@ -49,21 +49,21 @@ extension ZSScrollCarouselFullView {
     
     public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellClass.zs_identifier, for: indexPath) as! ZSScrollCarouselCell
+        let cell = super.collectionView(collectionView, cellForItemAt: indexPath)
         
-        if collectionViewLayout.scrollDirection == .horizontal
+        if let __cell = cell as? ZSScrollCarouselCell
         {
-            cell.minimumInteritemSpacing = minimumSpacing
-            cell.minimumLineSpacing = 0
+            if collectionViewLayout.scrollDirection == .horizontal
+            {
+                __cell.minimumInteritemSpacing = minimumSpacing
+                __cell.minimumLineSpacing = 0
+            }
+            else
+            {
+                __cell.minimumInteritemSpacing = 0
+                __cell.minimumLineSpacing = minimumSpacing
+            }
         }
-        else
-        {
-            cell.minimumInteritemSpacing = 0
-            cell.minimumLineSpacing = minimumSpacing
-        }
-        
-        dataSource?.zs_configCarouseCell(cell, itemAt: scrollCarouseIndex(from: indexPath.item))
-        
         return cell
     }
     

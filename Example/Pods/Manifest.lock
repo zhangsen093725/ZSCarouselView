@@ -1,6 +1,6 @@
 PODS:
   - Kingfisher (4.10.1)
-  - ZSCarouselView (0.1.3)
+  - ZSCarouselView (0.1.5)
   - ZSViewUtil (0.7.8):
     - ZSViewUtil/All (= 0.7.8)
   - ZSViewUtil/All (0.7.8)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  ZSCarouselView: 22b6f935751f12be9e2320c6b1e2506eb921fddc
+  ZSCarouselView: 750d4c7884667130cae2dd19ada31e906e84a813
   ZSViewUtil: 304fd27727dc65c1994f17f908736fdc6437a578
 
 PODFILE CHECKSUM: 4377bc999b351aabeecdc5c311fd01bff6e96864
